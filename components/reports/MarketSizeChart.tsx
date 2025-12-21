@@ -67,7 +67,7 @@ export const MarketSizeChart = React.forwardRef<HTMLDivElement, MarketSizeChartP
                         className="w-full bg-gradient-to-t from-primary to-blue-400 rounded-t transition-all duration-300 hover:from-blue-600 hover:to-blue-500"
                         style={{ height: `${height}%` }}
                       >
-                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-foreground text-white text-xs py-1 px-2 rounded whitespace-nowrap">
+                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-[50%] group-hover:opacity-100 transition-opacity duration-200 bg-foreground text-white text-xs py-1 px-2 rounded whitespace-nowrap">
                           ${value.toFixed(1)}B
                         </div>
                       </div>
