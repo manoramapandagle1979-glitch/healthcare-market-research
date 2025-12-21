@@ -17,11 +17,11 @@ interface SegmentationChartProps {
 export const SegmentationChart = React.forwardRef<HTMLDivElement, SegmentationChartProps>(
   ({ title, segments, className }, ref) => {
     const colors = [
-      'bg-blue-600',
-      'bg-blue-500',
-      'bg-blue-400',
-      'bg-blue-300',
-      'bg-blue-200',
+      'bg-navy-800',
+      'bg-ocean-700',
+      'bg-ocean-600',
+      'bg-ocean-500',
+      'bg-bright-500',
       'bg-gray-300',
     ];
 

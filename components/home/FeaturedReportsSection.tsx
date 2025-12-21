@@ -22,7 +22,7 @@ export default function FeaturedReportsSection() {
           <Grid cols={3} gap="lg">
             {featuredReports.map((report) => (
               <Link key={report.id} href={`/reports/${report.slug}`}>
-                <Card hover padding="md">
+                <Card className="hover:shadow-lg transition-shadow">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-3">
                       <Badge variant="primary" size="sm">
@@ -32,9 +32,9 @@ export default function FeaturedReportsSection() {
                         {formatDate(report.date)}
                       </span>
                     </div>
-                    <CardTitle as="h3">{report.title}</CardTitle>
+                    <CardTitle className="text-lg">{report.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent style={{ paddingTop: 0, paddingBottom: 0 }}>
                     <CardDescription>{report.description}</CardDescription>
                   </CardContent>
                   <CardFooter>

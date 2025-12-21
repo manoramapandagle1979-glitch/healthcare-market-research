@@ -21,23 +21,23 @@ export function BlogCard({
   readTime,
 }: BlogCardProps) {
   return (
-    <Link href={`/blog/${slug}`}>
-      <Card hover className="h-full">
+    <Link href={`/blog/${slug}`} className="group">
+      <Card className="h-full hover:shadow-primary-lg hover:border-ocean-500 transition-all duration-300 hover:-translate-y-1">
         <CardHeader>
           <div className="mb-3">
-            <Badge variant="default">{category}</Badge>
+            <Badge variant="default" className="bg-gradient-to-r from-slate-100 to-ocean-50 text-ocean-700 border border-ocean-200 shadow-sm">{category}</Badge>
           </div>
-          <CardTitle className="line-clamp-2">{title}</CardTitle>
-          <CardDescription className="line-clamp-3 mt-2">
+          <CardTitle className="line-clamp-2 group-hover:text-ocean-700 transition-colors">{title}</CardTitle>
+          <CardDescription className="line-clamp-3 mt-2 text-slate-600">
             {excerpt}
           </CardDescription>
         </CardHeader>
-        <CardFooter className="flex items-center justify-between text-sm text-[var(--muted-foreground)]">
-          <span className="font-medium">{author}</span>
+        <CardFooter className="flex items-center justify-between text-sm text-slate-500 border-t border-slate-200 pt-4">
+          <span className="font-medium text-slate-700">{author}</span>
           <div className="flex items-center gap-2">
-            <span>{readTime}</span>
+            <span>📖 {readTime}</span>
             <span>•</span>
-            <time>{date}</time>
+            <time>📅 {date}</time>
           </div>
         </CardFooter>
       </Card>

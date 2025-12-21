@@ -64,7 +64,7 @@ export const MarketSizeChart = React.forwardRef<HTMLDivElement, MarketSizeChartP
                   <div key={index} className="flex-1 flex flex-col items-center">
                     <div className="relative w-full group">
                       <div
-                        className="w-full bg-gradient-to-t from-primary to-blue-400 rounded-t transition-all duration-300 hover:from-blue-600 hover:to-blue-500"
+                        className="w-full bg-gradient-to-t from-navy-800 via-ocean-600 to-bright-500 rounded-t transition-all duration-300 hover:from-ocean-700 hover:via-ocean-600 hover:to-bright-400"
                         style={{ height: `${height}%` }}
                       >
                         <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-[50%] group-hover:opacity-100 transition-opacity duration-200 bg-foreground text-white text-xs py-1 px-2 rounded whitespace-nowrap">
@@ -83,7 +83,7 @@ export const MarketSizeChart = React.forwardRef<HTMLDivElement, MarketSizeChartP
 
           <div className="mt-6 flex items-center gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-gradient-to-t from-primary to-blue-400 rounded"></div>
+              <div className="w-4 h-4 bg-gradient-to-t from-navy-800 via-ocean-600 to-bright-500 rounded"></div>
               <span>Revenue (USD Billion)</span>
             </div>
           </div>

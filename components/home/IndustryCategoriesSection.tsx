@@ -18,9 +18,9 @@ export default function IndustryCategoriesSection() {
 
           <Grid cols={3} gap="md">
             {categories.map((category) => (
-              <Card key={category.id} hover padding="md">
+              <Card key={category.id} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle as="h3">{category.name}</CardTitle>
+                  <CardTitle className="text-lg">{category.name}</CardTitle>
                   <CardDescription>
                     {truncate(category.description, 80)}
                   </CardDescription>

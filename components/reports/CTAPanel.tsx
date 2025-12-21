@@ -11,7 +11,7 @@ interface CTAPanelProps {
 export const CTAPanel = React.forwardRef<HTMLDivElement, CTAPanelProps>(
   ({ price, className }, ref) => {
     return (
-      <Card ref={ref} className={cn('border-[var(--primary)]/20', className)}>
+      <Card ref={ref}>
         <CardContent className="space-y-4">
           <div className="text-center">
             <p className="text-sm text-[var(--muted-foreground)] mb-2">

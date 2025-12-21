@@ -3,8 +3,11 @@ import reports from "@/data/reports.json";
 import { Breadcrumb, Badge, Card, CardContent } from "@/components/ui";
 import { TableOfContents } from "@/components/reports/TableOfContents";
 import { CTAPanel } from "@/components/reports/CTAPanel";
-import { MarketSizeChart } from "@/components/reports/MarketSizeChart";
-import { SegmentationChart } from "@/components/reports/SegmentationChart";
+import {
+  MarketGrowthChart,
+  MarketSharePieChart,
+  RegionalAnalysisChart,
+} from "@/components/reports/charts";
 
 export async function generateStaticParams() {
   return reports.map((report) => ({
@@ -127,7 +130,7 @@ export default async function ReportPage({
                     </div>
 
                     {report.keyFindings && report.keyFindings.length > 0 && (
-                      <Card className="mt-8 border-[var(--primary)]/20 bg-[var(--muted)]">
+                      <Card className="mt-8 bg-[var(--muted)]">
                         <CardContent className="p-6">
                           <h3 className="text-lg font-semibold text-[var(--foreground)] mb-4">
                             Key Findings
@@ -168,7 +171,7 @@ export default async function ReportPage({
                         {report.forecastPeriod?.split('-')[1] || '2032'}, at a CAGR of{' '}
                         {report.cagr} during the forecast period.
                       </p>
-                      <MarketSizeChart
+                      <MarketGrowthChart
                         marketSize2024={report.marketSize2024}
                         marketSize2032={report.marketSize2032}
                         cagr={report.cagr}
@@ -184,8 +187,8 @@ export default async function ReportPage({
                       <div className="space-y-8">
                         {report.segmentation.byType && (
                           <div id="seg-type" className="scroll-mt-24">
-                            <SegmentationChart
-                              title="By Service Type"
+                            <MarketSharePieChart
+                              title="Market Share by Service Type"
                               segments={report.segmentation.byType}
                             />
                           </div>
@@ -193,8 +196,8 @@ export default async function ReportPage({
 
                         {report.segmentation.byApplication && (
                           <div id="seg-application" className="scroll-mt-24">
-                            <SegmentationChart
-                              title="By Application"
+                            <MarketSharePieChart
+                              title="Market Share by Application"
                               segments={report.segmentation.byApplication}
                             />
                           </div>
@@ -202,8 +205,8 @@ export default async function ReportPage({
 
                         {report.segmentation.byEndUser && (
                           <div id="seg-end-user" className="scroll-mt-24">
-                            <SegmentationChart
-                              title="By End User"
+                            <MarketSharePieChart
+                              title="Market Share by End User"
                               segments={report.segmentation.byEndUser}
                             />
                           </div>
@@ -211,9 +214,8 @@ export default async function ReportPage({
 
                         {report.segmentation.byRegion && (
                           <div id="seg-region" className="scroll-mt-24">
-                            <SegmentationChart
-                              title="By Region"
-                              segments={report.segmentation.byRegion}
+                            <RegionalAnalysisChart
+                              regions={report.segmentation.byRegion}
                             />
                           </div>
                         )}

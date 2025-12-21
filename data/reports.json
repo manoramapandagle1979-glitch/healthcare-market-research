@@ -37,7 +37,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -116,7 +115,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -195,7 +193,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -274,7 +271,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -353,7 +349,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -432,7 +427,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -511,7 +505,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -590,7 +583,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -669,7 +661,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -748,7 +739,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -827,7 +817,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [
@@ -906,7 +895,6 @@
         { "name": "Dermatology", "share": "18.9%" },
         { "name": "Mental Health", "share": "17.6%" },
         { "name": "Neurology", "share": "14.2%" },
-        { "name": "Orthopedics", "share": "11.8%" },
         { "name": "Others", "share": "15.2%" }
       ],
       "byEndUser": [

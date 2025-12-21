@@ -56,7 +56,7 @@ export default function TestimonialsSection() {
 
           <Grid cols={3} gap="lg">
             {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} padding="md" border>
+              <Card key={testimonial.id} className="border">
                 <CardContent className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="flex-shrink-0">
@@ -65,7 +65,7 @@ export default function TestimonialsSection() {
                       </div>
                     </div>
                     <div>
-                      <CardTitle as="h3" className="text-base">
+                      <CardTitle className="text-base">
                         {testimonial.name}
                       </CardTitle>
                       <CardDescription className="text-sm">

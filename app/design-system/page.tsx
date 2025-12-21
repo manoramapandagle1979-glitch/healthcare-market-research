@@ -102,7 +102,7 @@ export default function DesignSystemPage() {
             </div>
 
             <Grid cols={3} gap="lg">
-              <Card hover>
+              <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <CardTitle>Interactive Card</CardTitle>
                   <CardDescription>
@@ -135,7 +135,7 @@ export default function DesignSystemPage() {
                 </CardContent>
               </Card>
 
-              <Card border={false} className="shadow-lg">
+              <Card className="shadow-lg border-0">
                 <CardHeader>
                   <CardTitle>Shadow Card</CardTitle>
                   <CardDescription>

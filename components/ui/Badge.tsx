@@ -13,17 +13,17 @@ const Badge = forwardRef<HTMLSpanElement, BadgeProps>(
 
     const variants = {
       default:
-        'bg-[var(--muted)] text-[var(--muted-foreground)] hover:bg-[var(--secondary)]',
+        'bg-slate-100 text-slate-700 hover:bg-slate-200 shadow-sm',
       primary:
-        'bg-[var(--primary)] text-white',
+        'bg-gradient-to-r from-ocean-700 via-ocean-600 to-ocean-500 text-white shadow-primary',
       success:
-        'bg-green-100 text-green-800',
+        'bg-emerald-100 text-emerald-700 border border-emerald-200 shadow-sm',
       warning:
-        'bg-yellow-100 text-yellow-800',
+        'bg-amber-100 text-amber-700 border border-amber-200 shadow-sm',
       danger:
-        'bg-red-100 text-red-800',
+        'bg-red-100 text-red-700 border border-red-200 shadow-sm',
       outline:
-        'border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--muted)]',
+        'border border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-ocean-500',
     };
 
     const sizes = {
