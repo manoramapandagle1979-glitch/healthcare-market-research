@@ -1,41 +1,39 @@
-import Link from "next/link";
+import { Section, Container, Grid } from "@/components/ui";
+import { BlogCard } from "@/components/blog/BlogCard";
 import blogs from "@/data/blogs.json";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Healthcare Insights & Analysis | Blog",
+  description: "Expert insights, analysis, and updates on healthcare market trends, innovations, and industry developments from our team of healthcare specialists.",
+};
 
 export default function BlogPage() {
   return (
-    <div className="container mx-auto px-4 py-12 md:px-6">
-      <div className="mb-8">
-        <h1 className="mb-4 text-4xl font-bold">Blog</h1>
-        <p className="text-lg text-[var(--muted-foreground)]">
-          Insights, updates, and analysis from our healthcare experts.
-        </p>
-      </div>
+    <Section>
+      <Container>
+        <div className="mb-12">
+          <h1 className="mb-4 text-4xl font-bold md:text-5xl">Insights & Analysis</h1>
+          <p className="text-lg text-[var(--muted-foreground)] max-w-2xl">
+            Expert perspectives on healthcare market trends, emerging technologies, and industry transformations.
+          </p>
+        </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {blogs.map((blog) => (
-          <article
-            key={blog.id}
-            className="rounded-lg border border-[var(--border)] bg-[var(--card)] p-6"
-          >
-            <div className="mb-2 text-sm text-[var(--primary)]">{blog.category}</div>
-            <h2 className="mb-3 text-xl font-semibold">
-              <Link
-                href={`/blog/${blog.slug}`}
-                className="hover:text-[var(--primary)] transition-colors"
-              >
-                {blog.title}
-              </Link>
-            </h2>
-            <p className="mb-4 text-[var(--muted-foreground)] line-clamp-3">
-              {blog.excerpt}
-            </p>
-            <div className="flex items-center justify-between text-sm text-[var(--muted-foreground)]">
-              <span>{blog.author}</span>
-              <span>{blog.date}</span>
-            </div>
-          </article>
-        ))}
-      </div>
-    </div>
+        <Grid cols={3}>
+          {blogs.map((blog) => (
+            <BlogCard
+              key={blog.id}
+              slug={blog.slug}
+              title={blog.title}
+              excerpt={blog.excerpt}
+              category={blog.category}
+              author={blog.author}
+              date={blog.date}
+              readTime={blog.readTime}
+            />
+          ))}
+        </Grid>
+      </Container>
+    </Section>
   );
 }

@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">About</h3>
             <p className="text-sm text-[var(--muted-foreground)]">
-              Healthcare Market Research provides comprehensive insights and analysis
+              Healthcare Research provides comprehensive insights and analysis
               for the healthcare industry.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-[var(--border)] pt-8 text-center text-sm text-[var(--muted-foreground)]">
-          <p>&copy; {currentYear} Healthcare Market Research. All rights reserved.</p>
+          <p>&copy; {currentYear} Healthcare Research. All rights reserved.</p>
         </div>
       </div>
     </footer>

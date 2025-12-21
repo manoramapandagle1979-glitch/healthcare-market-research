@@ -1,6 +1,6 @@
-"# Healthcare Market Research
+"# Healthcare Research
 
-A modern, enterprise-grade healthcare market research platform built with the latest web technologies.
+A modern, enterprise-grade healthcare research platform built with the latest web technologies.
 
 ## Tech Stack
 

@@ -5,7 +5,78 @@
     "title": "Telemedicine Market Analysis 2025",
     "description": "Comprehensive analysis of the global telemedicine market, including growth projections, key players, and emerging trends in virtual healthcare delivery.",
     "category": "Digital Health",
-    "date": "December 15, 2025"
+    "date": "December 15, 2025",
+    "price": "$2,995",
+    "region": "Global",
+    "year": "2025",
+    "reportType": "Market Analysis",
+    "pages": 145,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
   },
   {
     "id": 2,
@@ -13,7 +84,78 @@
     "title": "Pharmaceutical Industry Outlook",
     "description": "In-depth review of pharmaceutical market dynamics, R&D pipelines, regulatory changes, and market opportunities across major therapeutic areas.",
     "category": "Pharmaceuticals",
-    "date": "December 10, 2025"
+    "date": "December 10, 2025",
+    "price": "$3,495",
+    "region": "Global",
+    "year": "2025",
+    "reportType": "Industry Report",
+    "pages": 182,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
   },
   {
     "id": 3,
@@ -21,7 +163,78 @@
     "title": "Medical Devices Innovation Report",
     "description": "Analysis of cutting-edge medical device technologies, market adoption rates, and competitive landscape in the medical devices sector.",
     "category": "Medical Devices",
-    "date": "December 5, 2025"
+    "date": "December 5, 2025",
+    "price": "$2,795",
+    "region": "North America",
+    "year": "2025",
+    "reportType": "Technology Assessment",
+    "pages": 128,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
   },
   {
     "id": 4,
@@ -29,7 +242,78 @@
     "title": "AI in Healthcare Applications",
     "description": "Exploration of artificial intelligence applications in healthcare, from diagnostic tools to drug discovery and personalized medicine.",
     "category": "Digital Health",
-    "date": "November 28, 2025"
+    "date": "November 28, 2025",
+    "price": "$3,995",
+    "region": "Global",
+    "year": "2025",
+    "reportType": "Strategic Outlook",
+    "pages": 215,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
   },
   {
     "id": 5,
@@ -37,7 +321,78 @@
     "title": "Healthcare Workforce Trends",
     "description": "Study of healthcare workforce dynamics, staffing challenges, recruitment strategies, and retention in the post-pandemic era.",
     "category": "Healthcare Services",
-    "date": "November 20, 2025"
+    "date": "November 20, 2025",
+    "price": "$2,295",
+    "region": "North America",
+    "year": "2025",
+    "reportType": "Industry Report",
+    "pages": 96,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
   },
   {
     "id": 6,
@@ -45,6 +400,551 @@
     "title": "Biotechnology Market Report",
     "description": "Comprehensive overview of the biotechnology sector, including gene therapy, personalized medicine, and emerging biotech innovations.",
     "category": "Biotechnology",
-    "date": "November 15, 2025"
+    "date": "November 15, 2025",
+    "price": "$3,295",
+    "region": "Global",
+    "year": "2025",
+    "reportType": "Market Analysis",
+    "pages": 168,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "european-healthcare-policy-2024",
+    "title": "European Healthcare Policy 2024",
+    "description": "Analysis of healthcare policy reforms, regulatory frameworks, and reimbursement trends across European Union member states.",
+    "category": "Policy & Regulation",
+    "date": "November 10, 2025",
+    "price": "$2,495",
+    "region": "Europe",
+    "year": "2024",
+    "reportType": "Regulatory Analysis",
+    "pages": 112,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "asia-pacific-medical-devices",
+    "title": "Asia Pacific Medical Devices Market",
+    "description": "Regional analysis of medical device market growth, regulatory environment, and competitive dynamics in Asia Pacific markets.",
+    "category": "Medical Devices",
+    "date": "November 5, 2025",
+    "price": "$3,695",
+    "region": "Asia Pacific",
+    "year": "2024",
+    "reportType": "Market Analysis",
+    "pages": 156,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "digital-therapeutics-competitive-landscape",
+    "title": "Digital Therapeutics Competitive Landscape",
+    "description": "Detailed competitive analysis of digital therapeutics companies, product pipelines, clinical validation, and market positioning strategies.",
+    "category": "Digital Health",
+    "date": "October 28, 2025",
+    "price": "$4,295",
+    "region": "North America",
+    "year": "2024",
+    "reportType": "Competitive Landscape",
+    "pages": 203,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "latin-america-pharma-market",
+    "title": "Latin America Pharmaceutical Market",
+    "description": "Comprehensive study of pharmaceutical market opportunities, regulatory challenges, and growth drivers in Latin American countries.",
+    "category": "Pharmaceuticals",
+    "date": "October 22, 2025",
+    "price": "$2,895",
+    "region": "Latin America",
+    "year": "2024",
+    "reportType": "Industry Report",
+    "pages": 134,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "gene-therapy-strategic-outlook",
+    "title": "Gene Therapy Strategic Outlook",
+    "description": "Strategic analysis of gene therapy market development, clinical trial trends, commercialization challenges, and investment opportunities.",
+    "category": "Biotechnology",
+    "date": "October 15, 2025",
+    "price": "$4,495",
+    "region": "Global",
+    "year": "2024",
+    "reportType": "Strategic Outlook",
+    "pages": 189,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "middle-east-africa-healthcare-services",
+    "title": "Middle East & Africa Healthcare Services",
+    "description": "Analysis of healthcare service delivery models, infrastructure development, and private sector participation in MEA region.",
+    "category": "Healthcare Services",
+    "date": "October 8, 2025",
+    "price": "$3,195",
+    "region": "Middle East & Africa",
+    "year": "2024",
+    "reportType": "Competitive Landscape",
+    "pages": 142,
+    "reportCode": "TMD-2025-1145",
+    "baseYear": "2024",
+    "forecastPeriod": "2025-2032",
+    "marketSize2024": "$87.4 bn",
+    "marketSize2032": "$286.2 bn",
+    "cagr": "16.8%",
+    "overview": "The global telemedicine market is experiencing unprecedented growth driven by technological advancements, increasing smartphone penetration, and the lasting impact of the COVID-19 pandemic on healthcare delivery models. Telemedicine platforms enable remote patient consultations, chronic disease management, mental health services, and specialized care access, particularly in underserved regions. The integration of artificial intelligence, IoT devices, and 5G connectivity is transforming telemedicine from a convenience to a critical component of modern healthcare infrastructure. Regulatory support and reimbursement policy improvements are further accelerating market adoption across developed and emerging economies.",
+    "keyFindings": [
+      "The telemedicine market is projected to grow at a CAGR of 16.8% from 2025 to 2032",
+      "North America dominates with 45.2% market share driven by advanced infrastructure and favorable reimbursement policies",
+      "Real-time virtual consultations segment accounts for 38.7% of revenue in 2024",
+      "Mental health telemedicine services grew 127% year-over-year in 2024",
+      "Asia Pacific expected to witness fastest growth at 21.3% CAGR through 2032"
+    ],
+    "segmentation": {
+      "byType": [
+        { "name": "Tele-consulting", "share": "38.7%", "description": "Real-time video consultations between patients and healthcare providers" },
+        { "name": "Tele-monitoring", "share": "29.4%", "description": "Remote patient monitoring using connected devices and sensors" },
+        { "name": "Tele-education", "share": "18.2%", "description": "Medical education and training via digital platforms" },
+        { "name": "Tele-surgery", "share": "13.7%", "description": "Robotic-assisted remote surgical procedures" }
+      ],
+      "byApplication": [
+        { "name": "Cardiology", "share": "22.3%" },
+        { "name": "Dermatology", "share": "18.9%" },
+        { "name": "Mental Health", "share": "17.6%" },
+        { "name": "Neurology", "share": "14.2%" },
+        { "name": "Orthopedics", "share": "11.8%" },
+        { "name": "Others", "share": "15.2%" }
+      ],
+      "byEndUser": [
+        { "name": "Hospitals & Clinics", "share": "42.6%" },
+        { "name": "Homecare", "share": "31.5%" },
+        { "name": "Long-term Care Facilities", "share": "15.3%" },
+        { "name": "Others", "share": "10.6%" }
+      ],
+      "byRegion": [
+        { "name": "North America", "share": "45.2%", "cagr": "14.3%" },
+        { "name": "Europe", "share": "28.7%", "cagr": "15.9%" },
+        { "name": "Asia Pacific", "share": "18.4%", "cagr": "21.3%" },
+        { "name": "Latin America", "share": "4.9%", "cagr": "17.2%" },
+        { "name": "Middle East & Africa", "share": "2.8%", "cagr": "18.6%" }
+      ]
+    },
+    "keyPlayers": [
+      { "name": "Teladoc Health, Inc.", "marketShare": "14.2%", "headquarters": "United States" },
+      { "name": "Amwell (American Well)", "marketShare": "8.7%", "headquarters": "United States" },
+      { "name": "Doctor on Demand", "marketShare": "6.3%", "headquarters": "United States" },
+      { "name": "MDLIVE Inc.", "marketShare": "5.9%", "headquarters": "United States" },
+      { "name": "Ping An Healthcare Technology", "marketShare": "4.8%", "headquarters": "China" },
+      { "name": "InTouch Health (Teladoc)", "marketShare": "4.2%", "headquarters": "United States" },
+      { "name": "SOC Telemed", "marketShare": "3.6%", "headquarters": "United States" },
+      { "name": "MeMD", "marketShare": "2.9%", "headquarters": "United States" }
+    ],
+    "tableOfContents": [
+      { "id": "overview", "title": "Market Overview", "level": 1 },
+      { "id": "market-size", "title": "Market Size & Forecast", "level": 1 },
+      { "id": "segmentation", "title": "Market Segmentation", "level": 1 },
+      { "id": "seg-type", "title": "By Service Type", "level": 2 },
+      { "id": "seg-application", "title": "By Application", "level": 2 },
+      { "id": "seg-end-user", "title": "By End User", "level": 2 },
+      { "id": "seg-region", "title": "By Region", "level": 2 },
+      { "id": "competitive", "title": "Competitive Landscape", "level": 1 },
+      { "id": "key-players", "title": "Key Market Players", "level": 2 },
+      { "id": "drivers", "title": "Market Drivers & Opportunities", "level": 1 },
+      { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
+    ]
   }
 ]

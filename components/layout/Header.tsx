@@ -9,7 +9,7 @@ export default function Header() {
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--primary)] text-white font-bold text-lg">
             HM
           </div>
-          <span className="font-bold text-xl">Healthcare Market Research</span>
+          <span className="font-bold text-xl">Healthcare Research</span>
         </Link>
         <Navigation />
       </div>
