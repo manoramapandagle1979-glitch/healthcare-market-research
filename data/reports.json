@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "slug": "telemedicine-market-analysis-2025",
+    "title": "Telemedicine Market Analysis 2025",
+    "description": "Comprehensive analysis of the global telemedicine market, including growth projections, key players, and emerging trends in virtual healthcare delivery.",
+    "category": "Digital Health",
+    "date": "December 15, 2025"
+  },
+  {
+    "id": 2,
+    "slug": "pharmaceutical-industry-outlook",
+    "title": "Pharmaceutical Industry Outlook",
+    "description": "In-depth review of pharmaceutical market dynamics, R&D pipelines, regulatory changes, and market opportunities across major therapeutic areas.",
+    "category": "Pharmaceuticals",
+    "date": "December 10, 2025"
+  },
+  {
+    "id": 3,
+    "slug": "medical-devices-innovation-report",
+    "title": "Medical Devices Innovation Report",
+    "description": "Analysis of cutting-edge medical device technologies, market adoption rates, and competitive landscape in the medical devices sector.",
+    "category": "Medical Devices",
+    "date": "December 5, 2025"
+  },
+  {
+    "id": 4,
+    "slug": "ai-healthcare-applications",
+    "title": "AI in Healthcare Applications",
+    "description": "Exploration of artificial intelligence applications in healthcare, from diagnostic tools to drug discovery and personalized medicine.",
+    "category": "Digital Health",
+    "date": "November 28, 2025"
+  },
+  {
+    "id": 5,
+    "slug": "healthcare-workforce-trends",
+    "title": "Healthcare Workforce Trends",
+    "description": "Study of healthcare workforce dynamics, staffing challenges, recruitment strategies, and retention in the post-pandemic era.",
+    "category": "Healthcare Services",
+    "date": "November 20, 2025"
+  },
+  {
+    "id": 6,
+    "slug": "biotechnology-market-report",
+    "title": "Biotechnology Market Report",
+    "description": "Comprehensive overview of the biotechnology sector, including gene therapy, personalized medicine, and emerging biotech innovations.",
+    "category": "Biotechnology",
+    "date": "November 15, 2025"
+  }
+]

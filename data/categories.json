@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Digital Health",
+    "slug": "digital-health",
+    "description": "Technologies and solutions transforming healthcare delivery through digital innovation"
+  },
+  {
+    "id": 2,
+    "name": "Pharmaceuticals",
+    "slug": "pharmaceuticals",
+    "description": "Drug development, market analysis, and pharmaceutical industry trends"
+  },
+  {
+    "id": 3,
+    "name": "Medical Devices",
+    "slug": "medical-devices",
+    "description": "Innovation and market dynamics in medical equipment and devices"
+  },
+  {
+    "id": 4,
+    "name": "Biotechnology",
+    "slug": "biotechnology",
+    "description": "Biotechnology advances, gene therapy, and personalized medicine"
+  },
+  {
+    "id": 5,
+    "name": "Healthcare Services",
+    "slug": "healthcare-services",
+    "description": "Healthcare delivery, workforce, and service provision trends"
+  },
+  {
+    "id": 6,
+    "name": "Policy & Regulation",
+    "slug": "policy-regulation",
+    "description": "Healthcare policy, regulatory changes, and compliance"
+  }
+]
