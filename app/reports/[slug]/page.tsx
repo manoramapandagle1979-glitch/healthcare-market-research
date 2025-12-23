@@ -178,7 +178,7 @@ export default async function ReportPage({
     },
     {
       label: 'Report Coverage',
-      value: report.region || '—',
+      value: 'Global',
       bg: 'bg-[#ffe6c7]',
       labelColor: 'text-[#b16806]',
       valueColor: 'text-[#a05c05]',
