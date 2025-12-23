@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import reports from "@/data/reports.json";
+import teamMembers from "@/data/team-members.json";
 import { Breadcrumb, Badge, Card, CardContent } from "@/components/ui";
 import { TableOfContents } from "@/components/reports/TableOfContents";
 import { CTAPanel } from "@/components/reports/CTAPanel";
@@ -8,6 +9,8 @@ import {
   MarketSharePieChart,
   RegionalAnalysisChart,
 } from "@/components/reports/charts";
+import MeetTheTeam from "@/components/reports/MeetTheTeam";
+import RelatedReports from "@/components/reports/RelatedReports";
 
 export async function generateStaticParams() {
   return reports.map((report) => ({
@@ -43,6 +46,8 @@ interface Report {
   };
   keyPlayers?: Array<{ name: string; marketShare: string; headquarters: string }>;
   tableOfContents?: Array<{ id: string; title: string; level: number }>;
+  teamMemberIds?: string[];
+  relatedReportIds?: number[];
 }
 
 export default async function ReportPage({
@@ -65,6 +70,155 @@ export default async function ReportPage({
 
   const hasFullContent = report.tableOfContents && report.overview;
 
+  const baseYearLabel = report.baseYear || '2024';
+  const forecastEndYear = report.forecastPeriod?.split('-')[1] || '2032';
+  const forecastRangeLabel = report.forecastPeriod || `${baseYearLabel}-${forecastEndYear}`;
+
+  const metricCards = [
+    {
+      label: `Revenue, ${baseYearLabel}`,
+      value: report.marketSize2024 || '—',
+      bg: 'bg-[#ede7ff]',
+      labelColor: 'text-[#4d3f9a]',
+      valueColor: 'text-[#3a2c8f]',
+      icon: (
+        <svg
+          aria-hidden
+          className="w-10 h-10 text-[#6b4de6]"
+          viewBox="0 0 64 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 44c0-6.627 5.373-12 12-12s12 5.373 12 12"
+            stroke="#6b4de6"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+          <path d="M12 48h40" stroke="#6b4de6" strokeWidth="3" strokeLinecap="round" />
+          <path
+            d="M28 28V18c0-3.314 2.686-6 6-6s6 2.686 6 6v2"
+            stroke="#6b4de6"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path d="M24 36v-6" stroke="#6b4de6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M38 32v-4" stroke="#6b4de6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+          <circle cx="34" cy="20" r="2" fill="#6b4de6" />
+        </svg>
+      ),
+    },
+    {
+      label: `Forecast, ${forecastEndYear}`,
+      value: report.marketSize2032 || '—',
+      bg: 'bg-[#d9f0df]',
+      labelColor: 'text-[#0f6c4c]',
+      valueColor: 'text-[#0f5c46]',
+      icon: (
+        <svg
+          aria-hidden
+          className="w-10 h-10 text-[#0d7a55]"
+          viewBox="0 0 64 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 46l10-18 10 12 12-22 12 28"
+            stroke="#0d7a55"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path d="M10 52h44" stroke="#0d7a55" strokeWidth="3" strokeLinecap="round" />
+          <circle cx="20" cy="28" r="2" fill="#0d7a55" />
+          <circle cx="30" cy="40" r="2" fill="#0d7a55" />
+          <circle cx="42" cy="20" r="2" fill="#0d7a55" />
+          <circle cx="54" cy="48" r="2" fill="#0d7a55" />
+        </svg>
+      ),
+    },
+    {
+      // label: `CAGR, ${forecastRangeLabel}`,
+      label: `CAGR, ${'2025'}`,
+      value: report.cagr || '—',
+      bg: 'bg-[#d6edff]',
+      labelColor: 'text-[#1c7cc0]',
+      valueColor: 'text-[#0c5f99]',
+      icon: (
+        <svg
+          aria-hidden
+          className="w-10 h-10 text-[#1c7cc0]"
+          viewBox="0 0 64 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14 40h6v-8h-6v8zm12 0h6V20h-6v20zm12 0h6V28h-6v12zm12 0h6V16h-6v24z"
+            fill="#1c7cc0"
+            opacity="0.3"
+          />
+          <path d="M12 44h40" stroke="#1c7cc0" strokeWidth="3" strokeLinecap="round" />
+          <path
+            d="M12 34c6-4 10-6 16-6s10 2 16 6 10 6 16 6"
+            stroke="#1c7cc0"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M40 18l4-4 4 4"
+            stroke="#1c7cc0"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      ),
+    },
+    {
+      label: 'Report Coverage',
+      value: report.region || '—',
+      bg: 'bg-[#ffe6c7]',
+      labelColor: 'text-[#b16806]',
+      valueColor: 'text-[#a05c05]',
+      icon: (
+        <svg
+          aria-hidden
+          className="w-10 h-10 text-[#c57b0b]"
+          viewBox="0 0 64 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="32" cy="28" r="14" stroke="#c57b0b" strokeWidth="3" />
+          <path d="M32 14v4m0 28v4m14-14h4M14 32h4" stroke="#c57b0b" strokeWidth="3" strokeLinecap="round" />
+          <path d="M24 44l-6 6" stroke="#c57b0b" strokeWidth="3" strokeLinecap="round" />
+          <path d="M40 44l6 6" stroke="#c57b0b" strokeWidth="3" strokeLinecap="round" />
+        </svg>
+      ),
+    },
+  ];
+
+  // Fetch team members for this report
+  const reportTeamMembers = report.teamMemberIds
+    ? teamMembers.filter((tm) => report.teamMemberIds!.includes(tm.id))
+    : [];
+
+  // Fetch related reports
+  const relatedReports = report.relatedReportIds
+    ? reports
+        .filter((r) => report.relatedReportIds!.includes(r.id))
+        .slice(0, 4)
+        .map((r) => ({
+          id: r.id,
+          slug: r.slug,
+          title: r.title,
+          category: r.category,
+          date: r.date,
+          price: r.price,
+        }))
+    : [];
+
   return (
     <div className="bg-[var(--background)]">
       <div className="border-b border-[var(--border)] bg-[var(--card)]">
@@ -76,12 +230,12 @@ export default async function ReportPage({
       <div className="container mx-auto px-4 py-8 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {hasFullContent && report.tableOfContents && (
-            <aside className="hidden lg:block lg:col-span-3">
+            <aside className="hidden lg:block lg:col-span-2">
               <TableOfContents items={report.tableOfContents} />
             </aside>
           )}
 
-          <main className={hasFullContent ? "lg:col-span-6" : "lg:col-span-9"}>
+          <main className={hasFullContent ? "lg:col-span-7" : "lg:col-span-10"}>
             <article>
               <header className="mb-8 pb-8 border-b border-[var(--border)]">
                 <div className="flex items-center gap-3 mb-4">
@@ -118,6 +272,22 @@ export default async function ReportPage({
                   </div>
                 </div>
               </header>
+
+              <section className="mb-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {metricCards.map((card) => (
+                    <Card key={card.label} className={`${card.bg} border-none`}>
+                      <CardContent className="flex items-center gap-3" style={{padding: '8px'}}>
+                        {card.icon}
+                        <div>
+                          <p className={`text-sm font-semibold ${card.labelColor}`}>{card.label}</p>
+                          <p className={`text-lg font-bold ${card.valueColor}`}>{card.value}</p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </section>
 
               {hasFullContent ? (
                 <>
@@ -297,6 +467,10 @@ export default async function ReportPage({
                       </ul>
                     </div>
                   </section>
+
+                  {/* NEW SECTIONS */}
+                  <MeetTheTeam teamMembers={reportTeamMembers} />
+                  <RelatedReports reports={relatedReports} />
                 </>
               ) : (
                 <section className="prose prose-lg max-w-none">
@@ -326,7 +500,7 @@ export default async function ReportPage({
             </article>
           </main>
 
-          <aside className={hasFullContent ? "lg:col-span-3" : "lg:col-span-3"}>
+          <aside className={hasFullContent ? "lg:col-span-3" : "lg:col-span-2"}>
             <div className="sticky top-24">
               <CTAPanel price={report.price} />
             </div>
