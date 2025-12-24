@@ -77,7 +77,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm001", "tm003"],
-    "relatedReportIds": [4, 9, 6]
+    "relatedReportIds": [4, 9, 6],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 2,

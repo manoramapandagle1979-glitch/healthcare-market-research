@@ -11,6 +11,7 @@ import {
 } from "@/components/reports/charts";
 import MeetTheTeam from "@/components/reports/MeetTheTeam";
 import RelatedReports from "@/components/reports/RelatedReports";
+import ReferenceImages from "@/components/reports/ReferenceImages";
 
 export async function generateStaticParams() {
   return reports.map((report) => ({
@@ -48,6 +49,11 @@ interface Report {
   tableOfContents?: Array<{ id: string; title: string; level: number }>;
   teamMemberIds?: string[];
   relatedReportIds?: number[];
+  referenceImages?: Array<{
+    url: string;
+    caption: string;
+    alt: string;
+  }>;
 }
 
 export default async function ReportPage({
@@ -347,6 +353,11 @@ export default async function ReportPage({
                         cagr={report.cagr}
                       />
                     </section>
+                  )}
+
+                  {/* Reference Images */}
+                  {report.referenceImages && report.referenceImages.length > 0 && (
+                    <ReferenceImages images={report.referenceImages} />
                   )}
 
                   {report.segmentation && (
