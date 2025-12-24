@@ -179,7 +179,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm002"],
-    "relatedReportIds": [10, 6, 11]
+    "relatedReportIds": [10, 6, 11],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 3,
@@ -259,7 +281,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm003"],
-    "relatedReportIds": [8, 1, 4]
+    "relatedReportIds": [8, 1, 4],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 4,
@@ -339,7 +383,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm001", "tm002"],
-    "relatedReportIds": [1, 9, 3]
+    "relatedReportIds": [1, 9, 3],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 5,
@@ -419,7 +485,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm001"],
-    "relatedReportIds": [12, 1, 2]
+    "relatedReportIds": [12, 1, 2],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 6,
@@ -499,7 +587,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm002", "tm003"],
-    "relatedReportIds": [11, 2, 4]
+    "relatedReportIds": [11, 2, 4],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 7,
@@ -579,7 +689,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm001", "tm002"],
-    "relatedReportIds": [5, 2, 10]
+    "relatedReportIds": [5, 2, 10],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 8,
@@ -659,7 +791,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm003"],
-    "relatedReportIds": [3, 6, 4]
+    "relatedReportIds": [3, 6, 4],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 9,
@@ -739,7 +893,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm001"],
-    "relatedReportIds": [1, 4, 6]
+    "relatedReportIds": [1, 4, 6],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 10,
@@ -819,7 +995,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm002"],
-    "relatedReportIds": [2, 6, 7]
+    "relatedReportIds": [2, 6, 7],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 11,
@@ -899,7 +1097,29 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm002", "tm003"],
-    "relatedReportIds": [6, 2, 4]
+    "relatedReportIds": [6, 2, 4],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   },
   {
     "id": 12,
@@ -979,6 +1199,28 @@
       { "id": "challenges", "title": "Challenges & Restraints", "level": 1 }
     ],
     "teamMemberIds": ["tm001", "tm003"],
-    "relatedReportIds": [5, 7, 1]
+    "relatedReportIds": [5, 7, 1],
+    "referenceImages": [
+      {
+        "url": "/assets/images/mr.webp",
+        "caption": "Modern telemedicine platform showing virtual consultation dashboard with patient engagement metrics and real-time video capabilities",
+        "alt": "Telemedicine platform interface dashboard"
+      },
+      {
+        "url": "/assets/images/s1.webp",
+        "caption": "Remote patient monitoring devices connected via IoT for continuous health tracking and automated alerts",
+        "alt": "Remote patient monitoring devices and sensors"
+      },
+      {
+        "url": "/assets/images/s2.webp",
+        "caption": "Mobile health application enabling seamless doctor-patient communication, appointment scheduling, and medication reminders",
+        "alt": "Mobile health app user interface"
+      },
+      {
+        "url": "/assets/images/s3.webp",
+        "caption": "AI-powered diagnostic tools assisting healthcare providers with clinical decision support and predictive analytics",
+        "alt": "AI diagnostic tools and analytics dashboard"
+      }
+    ]
   }
 ]
