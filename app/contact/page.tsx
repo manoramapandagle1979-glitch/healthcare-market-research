@@ -57,7 +57,7 @@ export default function ContactPage() {
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold">Contact Us</h1>
             <p className="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
-              Have questions about our research? We're here to help. Reach out to our team for inquiries, demos, or custom research needs.
+              Have questions about our research? We are here to help. Reach out to our team for inquiries, demos, or custom research needs.
             </p>
           </div>
         </Container>
@@ -116,7 +116,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle>Send us a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Fill out the form below and we will get back to you within 24 hours.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -129,7 +129,7 @@ export default function ContactPage() {
                     </div>
                     <h3 className="text-xl font-semibold mb-2">Thank You!</h3>
                     <p className="text-[var(--muted-foreground)]">
-                      Your message has been sent successfully. We'll be in touch soon.
+                      Your message has been sent successfully. We will be in touch soon.
                     </p>
                   </div>
                 ) : (

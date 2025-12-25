@@ -119,7 +119,7 @@ export default function RequestSamplePage() {
               <CardHeader>
                 <CardTitle>Request Your Free Sample</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll send you a comprehensive sample report.
+                  Fill out the form below and we will send you a comprehensive sample report.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -132,10 +132,10 @@ export default function RequestSamplePage() {
                     </div>
                     <h3 className="text-xl font-semibold mb-2">Request Submitted!</h3>
                     <p className="text-[var(--muted-foreground)] mb-4">
-                      Your sample request has been received. We'll send the report to your email within 24 hours.
+                      Your sample request has been received. We will send the report to your email within 24 hours.
                     </p>
                     <p className="text-sm text-[var(--muted-foreground)]">
-                      Check your spam folder if you don't see it in your inbox.
+                      Check your spam folder if you do not see it in your inbox.
                     </p>
                   </div>
                 ) : (
@@ -238,7 +238,7 @@ export default function RequestSamplePage() {
                         placeholder="E.g., Telemedicine Market Report 2025-2032"
                       />
                       <p className="text-xs text-[var(--muted-foreground)] mt-1">
-                        Specify which report you'd like to receive a sample of
+                        Specify which report you would like to receive a sample of
                       </p>
                     </div>
 

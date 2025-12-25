@@ -20,7 +20,7 @@ export default function AboutPage() {
               Empowering Healthcare Decisions with Trusted Intelligence
             </h1>
             <p className="text-lg text-[var(--muted-foreground)] max-w-3xl mx-auto">
-              For over a decade, we've been the go-to source for healthcare market intelligence, helping organizations make informed strategic decisions.
+              For over a decade, we have been the go-to source for healthcare market intelligence, helping organizations make informed strategic decisions.
             </p>
           </div>
         </Container>
@@ -175,7 +175,7 @@ export default function AboutPage() {
                 Our research has informed strategic decisions at leading pharmaceutical companies, medical device manufacturers, healthcare providers, private equity firms, and consulting organizations worldwide.
               </p>
               <p className="leading-relaxed">
-                From guiding multi-million dollar investments to shaping product development roadmaps, our insights have tangible impact on the healthcare industry's evolution.
+                From guiding multi-million dollar investments to shaping product development roadmaps, our insights have tangible impact on the healthcare industrys evolution.
               </p>
             </div>
           </div>
