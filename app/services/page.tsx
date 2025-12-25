@@ -104,7 +104,7 @@ export default function ServicesPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-[var(--muted-foreground)]">
-                  When off-the-shelf research isn't enough, our custom research services provide targeted insights aligned with your unique business questions and strategic objectives.
+                  When off-the-shelf research is not enough, our custom research services provide targeted insights aligned with your unique business questions and strategic objectives.
                 </p>
                 
                 <div className="space-y-2">
@@ -336,7 +336,7 @@ export default function ServicesPage() {
               <div className="text-center space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold">Ready to Get Started?</h2>
                 <p className="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
-                  Whether you need a syndicated report or a comprehensive custom research project, we're here to help.
+                  Whether you need a syndicated report or a comprehensive custom research project, we are here to help.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact">

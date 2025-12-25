@@ -137,7 +137,7 @@ export default function RequestDemoPage() {
                       Thank you for your interest. Our team will reach out within 24 hours to schedule your personalized demo.
                     </p>
                     <p className="text-sm text-[var(--muted-foreground)]">
-                      We'll contact you at {formData.email}
+                      We will contact you at {formData.email}
                     </p>
                   </div>
                 ) : (
