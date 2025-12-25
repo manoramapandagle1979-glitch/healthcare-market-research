@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Section, Container, Card, CardHeader, CardTitle, CardDescription, CardContent, Button, Badge } from "@/components/ui";
 
-export default function RequestSamplePage() {
+function RequestSampleForm() {
   const searchParams = useSearchParams();
   const reportTitle = searchParams.get("report") || "";
   
@@ -289,5 +289,23 @@ export default function RequestSamplePage() {
         </Container>
       </Section>
     </>
+  );
+}
+
+export default function RequestSamplePage() {
+  return (
+    <Suspense fallback={
+      <Section padding="lg" background="muted">
+        <Container size="lg">
+          <div className="text-center space-y-4">
+            <div className="h-6 w-32 bg-gray-200 rounded-full mx-auto animate-pulse" />
+            <div className="h-12 w-96 bg-gray-200 rounded mx-auto animate-pulse" />
+            <div className="h-6 w-full max-w-2xl bg-gray-200 rounded mx-auto animate-pulse" />
+          </div>
+        </Container>
+      </Section>
+    }>
+      <RequestSampleForm />
+    </Suspense>
   );
 }
