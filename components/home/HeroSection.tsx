@@ -39,7 +39,7 @@ export default function HeroSection() {
                 View Reports
               </Button>
             </Link>
-            <Link href="#contact">
+            <Link href="/contact">
               <Button variant="outline" size="lg">
                 Contact Us
               </Button>

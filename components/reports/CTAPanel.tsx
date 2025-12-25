@@ -1,15 +1,17 @@
 import React from 'react';
+import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui';
 import { Button } from '@/components/ui';
 import { cn } from '@/lib/utils';
 
 interface CTAPanelProps {
   price: string;
+  reportTitle?: string;
   className?: string;
 }
 
 export const CTAPanel = React.forwardRef<HTMLDivElement, CTAPanelProps>(
-  ({ price, className }, ref) => {
+  ({ price, reportTitle, className }, ref) => {
     return (
       <Card ref={ref}>
         <CardContent className="space-y-4">
@@ -31,15 +33,16 @@ export const CTAPanel = React.forwardRef<HTMLDivElement, CTAPanelProps>(
           </div>
 
           <div className="space-y-3">
-            <Button className="w-full" size="lg">
-              Buy Now
-            </Button>
-            <Button variant="outline" className="w-full" size="lg">
-              Request Sample
-            </Button>
-            <Button variant="ghost" className="w-full" size="lg">
-              Ask an Analyst
-            </Button>
+            <Link href="/contact">
+              <Button className="w-full" size="lg">
+                Buy Now
+              </Button>
+            </Link>
+            <Link href={`/request-sample${reportTitle ? `?report=${encodeURIComponent(reportTitle)}` : ''}`} className='mt-4'>
+              <Button variant="outline" className="w-full" size="lg">
+                Request Sample
+              </Button>
+            </Link>
           </div>
 
           <div className="pt-4 border-t border-[var(--border)]">

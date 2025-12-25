@@ -15,7 +15,7 @@ export default function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <Link href="#contact">
+            <Link href="/request-demo">
               <Button
                 variant="secondary"
                 size="lg"
@@ -24,7 +24,7 @@ export default function CTASection() {
                 Request Demo
               </Button>
             </Link>
-            <Link href="#contact">
+            <Link href="/contact">
               <Button
                 variant="outline"
                 size="lg"

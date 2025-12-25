@@ -46,7 +46,7 @@ interface Report {
   };
   keyPlayers?: Array<{ name: string; marketShare: string; headquarters: string }>;
   tableOfContents?: Array<{ id: string; title: string; level: number }>;
-  fullReportTOC?: Array<{ id: string; title: string; number?: string; children?: any[] }>;
+  fullReportTOC?: Array<{ id: string; title: string; number?: string; children?: Array<{ id: string; title: string; number?: string }> }>;
   teamMemberIds?: string[];
   relatedReportIds?: number[];
   referenceImages?: Array<{
@@ -243,6 +243,7 @@ export default async function ReportPage({
           fullReportTOC={report.fullReportTOC}
           hasFullContent={hasFullContent}
           price={report.price}
+          reportTitle={report.title}
         >
           <article>
               <header className="mb-8 pb-8 border-b border-[var(--border)]">
