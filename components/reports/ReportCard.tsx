@@ -31,9 +31,14 @@ export default function ReportCard({ report }: ReportCardProps) {
             <Badge variant="primary" size="sm" className="shadow-sm">
               {report.category}
             </Badge>
-            <span className="text-lg font-bold bg-gradient-to-r from-ocean-700 via-ocean-600 to-bright-500 bg-clip-text text-transparent">
-              {report.price}
-            </span>
+            <div className="text-right">
+              <div className="text-sm text-slate-500 line-through">
+                $3490/-
+              </div>
+              <div className="text-lg font-bold bg-gradient-to-r from-ocean-700 via-ocean-600 to-bright-500 bg-clip-text text-transparent">
+                $3090/-
+              </div>
+            </div>
           </div>
 
           <CardTitle className="mb-2 text-lg group-hover:text-ocean-700 transition-colors">

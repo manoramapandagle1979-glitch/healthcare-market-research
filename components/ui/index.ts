@@ -20,3 +20,5 @@ export { Skeleton, SkeletonText, SkeletonCard } from './Skeleton';
 export type { SkeletonProps, SkeletonTextProps, SkeletonCardProps } from './Skeleton';
 
 export { Breadcrumb } from './Breadcrumb';
+
+export { default as SearchBar } from './SearchBar';

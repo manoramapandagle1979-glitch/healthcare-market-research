@@ -1,10 +1,12 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Section, Container, Grid } from '@/components/ui';
 import ReportCard from './ReportCard';
 import FilterSidebar, { FilterState } from './FilterSidebar';
 import Pagination from './Pagination';
+import categories from '@/data/categories.json';
 
 interface Report {
   id: number;
@@ -27,6 +29,7 @@ interface ReportsListingClientProps {
 const ITEMS_PER_PAGE = 12;
 
 export default function ReportsListingClient({ reports }: ReportsListingClientProps) {
+  const searchParams = useSearchParams();
   const [filters, setFilters] = useState<FilterState>({
     industries: [],
     regions: [],
@@ -35,6 +38,32 @@ export default function ReportsListingClient({ reports }: ReportsListingClientPr
     searchQuery: ''
   });
   const [currentPage, setCurrentPage] = useState(1);
+
+  // Handle URL category and search parameters on mount
+  useEffect(() => {
+    const categoryParam = searchParams.get('category');
+    const searchParam = searchParams.get('search');
+
+    setFilters(prev => {
+      const newFilters = { ...prev };
+
+      // Handle category parameter
+      if (categoryParam) {
+        // Find category by slug
+        const category = categories.find(c => c.slug === categoryParam);
+        if (category) {
+          newFilters.industries = [category.name];
+        }
+      }
+
+      // Handle search parameter
+      if (searchParam) {
+        newFilters.searchQuery = searchParam;
+      }
+
+      return newFilters;
+    });
+  }, [searchParams]);
 
   // Helper function to check if price is in range
   const isPriceInRange = (price: string, range: string): boolean => {

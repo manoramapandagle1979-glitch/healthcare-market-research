@@ -2,16 +2,15 @@ import { notFound } from "next/navigation";
 import reports from "@/data/reports.json";
 import teamMembers from "@/data/team-members.json";
 import { Breadcrumb, Badge, Card, CardContent } from "@/components/ui";
-import { TableOfContents } from "@/components/reports/TableOfContents";
-import { CTAPanel } from "@/components/reports/CTAPanel";
+import { ReportContentWrapper } from "@/components/reports/ReportContentWrapper";
 import {
   MarketGrowthChart,
   MarketSharePieChart,
   RegionalAnalysisChart,
 } from "@/components/reports/charts";
 import MeetTheTeam from "@/components/reports/MeetTheTeam";
-import RelatedReports from "@/components/reports/RelatedReports";
 import ReferenceImages from "@/components/reports/ReferenceImages";
+import FAQ from "@/components/reports/FAQ";
 
 export async function generateStaticParams() {
   return reports.map((report) => ({
@@ -47,12 +46,17 @@ interface Report {
   };
   keyPlayers?: Array<{ name: string; marketShare: string; headquarters: string }>;
   tableOfContents?: Array<{ id: string; title: string; level: number }>;
+  fullReportTOC?: Array<{ id: string; title: string; number?: string; children?: any[] }>;
   teamMemberIds?: string[];
   relatedReportIds?: number[];
   referenceImages?: Array<{
     url: string;
     caption: string;
     alt: string;
+  }>;
+  faqs?: Array<{
+    question: string;
+    answer: string;
   }>;
 }
 
@@ -74,7 +78,7 @@ export default async function ReportPage({
     { label: report.title },
   ];
 
-  const hasFullContent = report.tableOfContents && report.overview;
+  const hasFullContent = !!(report.tableOfContents && report.overview);
 
   const baseYearLabel = report.baseYear || '2024';
   const forecastEndYear = report.forecastPeriod?.split('-')[1] || '2032';
@@ -234,15 +238,13 @@ export default async function ReportPage({
       </div>
 
       <div className="container mx-auto px-4 py-8 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {hasFullContent && report.tableOfContents && (
-            <aside className="hidden lg:block lg:col-span-2">
-              <TableOfContents items={report.tableOfContents} />
-            </aside>
-          )}
-
-          <main className={hasFullContent ? "lg:col-span-7" : "lg:col-span-10"}>
-            <article>
+        <ReportContentWrapper
+          tableOfContents={report.tableOfContents}
+          fullReportTOC={report.fullReportTOC}
+          hasFullContent={hasFullContent}
+          price={report.price}
+        >
+          <article>
               <header className="mb-8 pb-8 border-b border-[var(--border)]">
                 <div className="flex items-center gap-3 mb-4">
                   <Badge variant="default">{report.category}</Badge>
@@ -336,7 +338,7 @@ export default async function ReportPage({
                     )}
                   </section>
 
-                  {report.marketSize2024 && report.marketSize2032 && report.cagr && (
+                  {/* {report.marketSize2024 && report.marketSize2032 && report.cagr && (
                     <section id="market-size" className="mb-12 scroll-mt-24">
                       <h2 className="text-3xl font-bold text-[var(--foreground)] mb-6">
                         Market Size & Forecast
@@ -353,14 +355,14 @@ export default async function ReportPage({
                         cagr={report.cagr}
                       />
                     </section>
-                  )}
+                  )} */}
 
                   {/* Reference Images */}
                   {report.referenceImages && report.referenceImages.length > 0 && (
                     <ReferenceImages images={report.referenceImages} />
                   )}
 
-                  {report.segmentation && (
+                  {/* {report.segmentation && (
                     <section id="segmentation" className="mb-12 scroll-mt-24">
                       <h2 className="text-3xl font-bold text-[var(--foreground)] mb-6">
                         Market Segmentation
@@ -402,7 +404,7 @@ export default async function ReportPage({
                         )}
                       </div>
                     </section>
-                  )}
+                  )} */}
 
                   <section id="competitive" className="mb-12 scroll-mt-24">
                     <h2 className="text-3xl font-bold text-[var(--foreground)] mb-6">
@@ -481,7 +483,9 @@ export default async function ReportPage({
 
                   {/* NEW SECTIONS */}
                   <MeetTheTeam teamMembers={reportTeamMembers} />
-                  <RelatedReports reports={relatedReports} />
+
+                  {/* FAQ Section */}
+                  {report.faqs && <FAQ faqs={report.faqs} />}
                 </>
               ) : (
                 <section className="prose prose-lg max-w-none">
@@ -509,14 +513,7 @@ export default async function ReportPage({
                 </section>
               )}
             </article>
-          </main>
-
-          <aside className={hasFullContent ? "lg:col-span-3" : "lg:col-span-2"}>
-            <div className="sticky top-24">
-              <CTAPanel price={report.price} />
-            </div>
-          </aside>
-        </div>
+        </ReportContentWrapper>
       </div>
     </div>
   );

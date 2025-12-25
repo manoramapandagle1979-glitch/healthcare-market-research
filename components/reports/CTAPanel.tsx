@@ -17,9 +17,14 @@ export const CTAPanel = React.forwardRef<HTMLDivElement, CTAPanelProps>(
             <p className="text-sm text-[var(--muted-foreground)] mb-2">
               Single User License
             </p>
-            <p className="text-4xl font-bold text-[var(--foreground)]">
-              {price}
-            </p>
+            <div className="mb-2">
+              <p className="text-lg text-[var(--muted-foreground)] line-through">
+                $3490/-
+              </p>
+              <p className="text-4xl font-bold text-[var(--foreground)]">
+                $3090/-
+              </p>
+            </div>
             <p className="text-xs text-[var(--muted-foreground)] mt-2">
               Save 20% with multi-user license
             </p>

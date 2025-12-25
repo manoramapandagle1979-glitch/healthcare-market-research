@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import reports from '@/data/reports.json';
 import { ReportsListingClient } from '@/components/reports';
 
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 };
 
 export default function ReportsPage() {
-  return <ReportsListingClient reports={reports} />;
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <ReportsListingClient reports={reports} />
+    </Suspense>
+  );
 }

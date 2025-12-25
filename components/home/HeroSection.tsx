@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Section, Container, Button } from '@/components/ui';
+import { Section, Container, Button, SearchBar } from '@/components/ui';
 
 export default function HeroSection() {
   return (
@@ -24,7 +24,16 @@ export default function HeroSection() {
             to drive strategic decisions in the rapidly evolving healthcare landscape.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
+          {/* Search Bar */}
+          <div className="w-full max-w-3xl flex justify-center animate-fadeIn" style={{ animationDelay: '0.15s' }}>
+            <SearchBar
+              variant="hero"
+              placeholder="Search reports, categories, regions..."
+              className="w-full px-4 sm:px-0"
+            />
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
             <Link href="/reports">
               <Button variant="primary" size="lg">
                 View Reports

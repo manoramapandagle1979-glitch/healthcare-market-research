@@ -2,21 +2,22 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-
-interface TOCItem {
-  id: string;
-  title: string;
-  level: number;
-}
+import { SidebarTOCItem } from '@/lib/toc-utils';
 
 interface TableOfContentsProps {
-  items: TOCItem[];
+  items: SidebarTOCItem[];
   className?: string;
+  onShowFullTOC?: () => void;
+  showFullTOC?: boolean;
+  onNavigateToSection?: (sectionId: string) => void;
 }
 
 export const TableOfContents: React.FC<TableOfContentsProps> = ({
   items,
   className,
+  onShowFullTOC,
+  showFullTOC,
+  onNavigateToSection,
 }) => {
   const [activeId, setActiveId] = useState<string>('');
 
@@ -53,16 +54,23 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 100;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
+    if (showFullTOC && onNavigateToSection) {
+      // Full TOC is open: trigger close + scroll sequence
+      onNavigateToSection(id);
+    } else {
+      // Normal behavior: scroll immediately
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
     }
   };
 
@@ -75,7 +83,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
     >
       <div className="pb-4">
         <h3 className="text-sm font-semibold text-[var(--foreground)] mb-4 uppercase tracking-wide">
-          Table of Contents
+          Report Details
         </h3>
         <ul className="space-y-2">
           {items.map((item) => (
@@ -101,6 +109,28 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
             </li>
           ))}
         </ul>
+
+        {onShowFullTOC && (
+          <button
+            onClick={onShowFullTOC}
+            className="mt-6 w-full inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-[var(--foreground)] bg-[var(--card)] border border-[var(--border)] rounded-md hover:bg-[var(--muted)] transition-colors duration-200"
+          >
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            Table of Contents
+          </button>
+        )}
       </div>
     </nav>
   );

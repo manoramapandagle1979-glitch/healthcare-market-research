@@ -146,7 +146,7 @@ export default function FilterSidebar({ filters, onFilterChange, totalCount }: F
       </FilterSection>
 
       {/* Report Type Filter */}
-      <FilterSection title="Report Type">
+      {/* <FilterSection title="Report Type">
         {REPORT_TYPES.map((type) => (
           <label
             key={type}
@@ -163,10 +163,10 @@ export default function FilterSidebar({ filters, onFilterChange, totalCount }: F
             </span>
           </label>
         ))}
-      </FilterSection>
+      </FilterSection> */}
 
       {/* Price Range Filter */}
-      <FilterSection title="Price Range">
+      {/* <FilterSection title="Price Range">
         {PRICE_RANGES.map((range) => (
           <label
             key={range}
@@ -183,7 +183,7 @@ export default function FilterSidebar({ filters, onFilterChange, totalCount }: F
             </span>
           </label>
         ))}
-      </FilterSection>
+      </FilterSection> */}
 
       {/* Clear All Filters Button */}
       {hasActiveFilters && (
