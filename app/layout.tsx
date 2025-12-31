@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   description: "Access comprehensive healthcare research reports, industry analysis, and expert insights on digital health, pharmaceuticals, medical devices, and emerging healthcare technologies.",
   keywords: ["healthcare research", "medical industry reports", "healthcare analytics", "pharmaceutical research", "digital health trends", "medical devices market"],
   authors: [{ name: "Healthcare Foresights Team" }],
+  icons: {
+    icon: "/assets/images/favicon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
