@@ -3,7 +3,7 @@ import { Section, Container, Button, SearchBar, Badge } from '@/components/ui';
 
 export default function HeroSection() {
   return (
-    <Section padding="xl" className="relative overflow-hidden">
+    <Section padding="xl" className="relative">
       {/* Advanced gradient mesh background - Full section coverage */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         {/* Grid pattern overlay */}
@@ -71,7 +71,7 @@ export default function HeroSection() {
           </div>
 
           {/* Search Bar with glassmorphic style */}
-          <div className="w-full max-w-3xl flex justify-center animate-fadeIn z-10" style={{ animationDelay: '0.15s' }}>
+          <div className="w-full max-w-3xl flex justify-center animate-fadeIn relative z-50" style={{ animationDelay: '0.15s' }}>
             <div className="w-full px-4 sm:px-0 backdrop-blur-sm">
               <SearchBar
                 variant="hero"
