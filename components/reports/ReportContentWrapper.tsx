@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, ReactNode } from 'react';
 import { TableOfContents } from './TableOfContents';
 import { FullReportTOC } from './FullReportTOC';
 import { CTAPanel } from './CTAPanel';
+import { CustomizeReportCard } from './CustomizeReportCard';
 import { groupTableOfContents, SidebarTOCItem, TOCItem } from '@/lib/toc-utils';
 
 interface ReportContentWrapperProps {
@@ -100,7 +101,8 @@ export const ReportContentWrapper: React.FC<ReportContentWrapperProps> = ({
 
       {/* Right Sidebar - CTA Panel */}
       <aside className={hasFullContent ? 'lg:col-span-3' : 'lg:col-span-2'}>
-        <div className="sticky top-24">
+        <div className="sticky top-24 space-y-4">
+          <CustomizeReportCard reportTitle={reportTitle} />
           <CTAPanel price={price} reportTitle={reportTitle} />
         </div>
       </aside>

@@ -20,17 +20,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Healthcare Research | Industry Reports & Insights",
-    template: "%s | Healthcare Research",
+    default: "Healthcare Foresights | Industry Reports & Insights",
+    template: "%s | Healthcare Foresights",
   },
   description: "Access comprehensive healthcare research reports, industry analysis, and expert insights on digital health, pharmaceuticals, medical devices, and emerging healthcare technologies.",
   keywords: ["healthcare research", "medical industry reports", "healthcare analytics", "pharmaceutical research", "digital health trends", "medical devices market"],
-  authors: [{ name: "Healthcare Research Team" }],
+  authors: [{ name: "Healthcare Foresights Team" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Healthcare Research",
-    title: "Healthcare Research | Industry Reports & Insights",
+    siteName: "Healthcare Foresights",
+    title: "Healthcare Foresights | Industry Reports & Insights",
     description: "Access comprehensive healthcare research reports, industry analysis, and expert insights.",
   },
   robots: {

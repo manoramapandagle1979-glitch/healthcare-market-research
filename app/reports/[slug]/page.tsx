@@ -1,7 +1,10 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
 import reports from "@/data/reports.json";
 import teamMembers from "@/data/team-members.json";
-import { Breadcrumb, Badge, Card, CardContent } from "@/components/ui";
+import { Breadcrumb, Badge, Card, CardContent, Button } from "@/components/ui";
+import { Download } from "lucide-react";
 import { ReportContentWrapper } from "@/components/reports/ReportContentWrapper";
 import {
   MarketGrowthChart,
@@ -9,7 +12,6 @@ import {
   RegionalAnalysisChart,
 } from "@/components/reports/charts";
 import MeetTheTeam from "@/components/reports/MeetTheTeam";
-import ReferenceImages from "@/components/reports/ReferenceImages";
 import FAQ from "@/components/reports/FAQ";
 
 export async function generateStaticParams() {
@@ -49,11 +51,6 @@ interface Report {
   fullReportTOC?: Array<{ id: string; title: string; number?: string; children?: Array<{ id: string; title: string; number?: string }> }>;
   teamMemberIds?: string[];
   relatedReportIds?: number[];
-  referenceImages?: Array<{
-    url: string;
-    caption: string;
-    alt: string;
-  }>;
   faqs?: Array<{
     question: string;
     answer: string;
@@ -309,37 +306,24 @@ export default async function ReportPage({
                     </div>
 
                     {report.keyFindings && report.keyFindings.length > 0 && (
-                      <Card className="mt-8 bg-[var(--muted)]">
-                        <CardContent className="p-6">
-                          <h3 className="text-lg font-semibold text-[var(--foreground)] mb-4">
-                            Key Findings
-                          </h3>
-                          <ul className="space-y-3">
+                      <div className="mt-8">
+                        <h3 className="text-3xl font-bold text-[var(--foreground)] mb-6">
+                          Key Findings
+                        </h3>
+                        <div className="bg-[#ede9fe] rounded-lg py-4 px-6">
+                          <ul className="list-disc list-outside ml-5 space-y-0">
                             {report.keyFindings.map((finding, index) => (
-                              <li key={index} className="flex items-start gap-3">
-                                <svg
-                                  className="w-5 h-5 text-[var(--primary)] mt-1 flex-shrink-0"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke="currentColor"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                  />
-                                </svg>
-                                <span className="text-[var(--foreground)]">{finding}</span>
+                              <li key={index} className="text-[var(--foreground)] py-4 border-b border-gray-300 last:border-b-0">
+                                {finding}
                               </li>
                             ))}
                           </ul>
-                        </CardContent>
-                      </Card>
+                        </div>
+                      </div>
                     )}
                   </section>
 
-                  {/* {report.marketSize2024 && report.marketSize2032 && report.cagr && (
+                  {report.marketSize2024 && report.marketSize2032 && report.cagr && (
                     <section id="market-size" className="mb-12 scroll-mt-24">
                       <h2 className="text-3xl font-bold text-[var(--foreground)] mb-6">
                         Market Size & Forecast
@@ -350,17 +334,75 @@ export default async function ReportPage({
                         {report.forecastPeriod?.split('-')[1] || '2032'}, at a CAGR of{' '}
                         {report.cagr} during the forecast period.
                       </p>
-                      <MarketGrowthChart
-                        marketSize2024={report.marketSize2024}
-                        marketSize2032={report.marketSize2032}
-                        cagr={report.cagr}
-                      />
-                    </section>
-                  )} */}
 
-                  {/* Reference Images */}
-                  {report.referenceImages && report.referenceImages.length > 0 && (
-                    <ReferenceImages images={report.referenceImages} />
+                      {/* Market Analysis Charts */}
+                      <div className="space-y-6">
+                        <div className="bg-white rounded-lg shadow-sm border border-[var(--border)] p-6">
+                          <h3 className="text-xl font-semibold text-[var(--foreground)] mb-4">
+                            Market Size by Segment (2020-2024)
+                          </h3>
+                          <Image
+                            src="/assets/images/chart1.png"
+                            alt="Global Medical Device Market - Bar Chart showing market size by segment from 2020-2024"
+                            width={1200}
+                            height={600}
+                            className="w-full h-auto"
+                            priority
+                          />
+                          
+                        {/* Download Sample Report CTA */}
+                        <div className="rounded-2xl pt-6">
+                          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
+                            <p className="text-[var(--muted-foreground)] text-base sm:text-lg font-medium">
+                              To learn more about this report,
+                            </p>
+                            <Link href={`/request-sample?report=${report.slug}`}>
+                              <Button
+                                variant="primary"
+                                size="lg"
+                                className="gap-2 shadow-primary hover:shadow-primary-lg whitespace-nowrap"
+                              >
+                                <Download className="w-5 h-5" />
+                                Download Free Sample
+                              </Button>
+                            </Link>
+                          </div>
+                        </div>
+                        </div>
+
+                        <div className="bg-white rounded-lg shadow-sm border border-[var(--border)] p-6">
+                          <h3 className="text-xl font-semibold text-[var(--foreground)] mb-4">
+                            Market Distribution by Segment
+                          </h3>
+                          <Image
+                            src="/assets/images/chart2.png"
+                            alt="Global Medical Device Market - Pie Chart showing market distribution by segment 2020-2024"
+                            width={1200}
+                            height={600}
+                            className="w-full h-auto"
+                          />
+                        {/* Download Sample Report CTA */}
+                        <div className="rounded-2xl pt-6">
+                          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
+                            <p className="text-[var(--muted-foreground)] text-base sm:text-lg font-medium">
+                              To learn more about this report,
+                            </p>
+                            <Link href={`/request-sample?report=${report.slug}`}>
+                              <Button
+                                variant="primary"
+                                size="lg"
+                                className="gap-2 shadow-primary hover:shadow-primary-lg whitespace-nowrap"
+                              >
+                                <Download className="w-5 h-5" />
+                                Download Free Sample
+                              </Button>
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                        </div>
+
+                    </section>
                   )}
 
                   {/* {report.segmentation && (
@@ -426,14 +468,14 @@ export default async function ReportPage({
                           {report.keyPlayers.map((player, index) => (
                             <Card key={index} className="hover:shadow-md transition-shadow">
                               <CardContent className="">
-                                <div className="flex items-start justify-between">
+                                <div className="flex items-center justify-between">
                                   <div>
                                     <h4 className="font-semibold text-[var(--foreground)] text-lg mb-2">
                                       {player.name}
                                     </h4>
-                                    <p className="text-sm text-[var(--muted-foreground)]">
+                                    {/* <p className="text-sm text-[var(--muted-foreground)]">
                                       Headquarters: {player.headquarters}
-                                    </p>
+                                    </p> */}
                                   </div>
                                   <div className="text-right">
                                     <p className="text-xs text-[var(--muted-foreground)] mb-1">

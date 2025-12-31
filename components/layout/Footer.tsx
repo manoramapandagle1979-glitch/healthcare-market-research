@@ -10,9 +10,9 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-navy-800 via-ocean-600 to-ocean-500 text-white font-bold text-sm shadow-primary">
-                HR
+                HF
               </div>
-              <span className="font-bold text-lg bg-gradient-to-r from-navy-800 via-ocean-600 to-ocean-500 bg-clip-text text-transparent">Healthcare Research</span>
+              <span className="font-bold text-lg bg-gradient-to-r from-navy-800 via-ocean-600 to-ocean-500 bg-clip-text text-transparent">Healthcare Foresights</span>
             </div>
             <p className="text-sm text-slate-600">
               Comprehensive insights and analysis for the healthcare industry.
@@ -51,7 +51,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-slate-200 pt-8 text-center">
           <p className="text-sm text-slate-500">
-            &copy; {currentYear} Healthcare Research. All rights reserved.
+            &copy; {currentYear} Healthcare Foresights. All rights reserved.
           </p>
         </div>
       </div>

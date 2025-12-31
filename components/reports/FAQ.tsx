@@ -37,27 +37,37 @@ export default function FAQ({ faqs }: FAQProps) {
             <CardContent className="p-0">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full text-left p-6 flex items-start justify-between gap-4 group"
+                className="w-full text-left p-6 flex items-start gap-4 group"
                 aria-expanded={openIndex === index}
               >
-                <span className="font-semibold text-[var(--foreground)] text-lg group-hover:text-[var(--primary)] transition-colors">
+                <div
+                  className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 bg-[var(--primary)] text-white transition-colors duration-200 group-hover:bg-[var(--primary)]/90`}
+                >
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                  >
+                    {openIndex === index ? (
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 12h14"
+                      />
+                    ) : (
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 5v14m-7-7h14"
+                      />
+                    )}
+                  </svg>
+                </div>
+                <span className="font-semibold text-[var(--foreground)] text-lg group-hover:text-[var(--primary)] transition-colors flex-1">
                   {faq.question}
                 </span>
-                <svg
-                  className={`w-5 h-5 text-[var(--muted-foreground)] flex-shrink-0 transition-transform duration-200 ${
-                    openIndex === index ? "rotate-180" : ""
-                  }`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
               </button>
               <div
                 className={`overflow-hidden transition-all duration-200 ${

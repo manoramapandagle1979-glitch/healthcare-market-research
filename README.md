@@ -1,4 +1,4 @@
-"# Healthcare Research
+"# Healthcare Foresights
 
 A modern, enterprise-grade healthcare research platform built with the latest web technologies.
 

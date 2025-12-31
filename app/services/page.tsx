@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Section, Container, Grid, Card, CardContent, CardHeader, CardTitle, CardDescription, Badge, Button } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Services | Healthcare Research",
+  title: "Services | Healthcare Foresights",
   description: "Explore our comprehensive range of healthcare market research services including syndicated reports, custom research, consulting, and advisory services.",
 };
 

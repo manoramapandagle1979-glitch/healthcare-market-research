@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Section, Container, Grid, Card, CardContent, CardHeader, CardTitle, CardDescription, Badge, Button } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "About Us | Healthcare Research",
-  description: "Learn about Healthcare Research - your trusted partner for comprehensive healthcare market intelligence and research reports.",
+  title: "About Us | Healthcare Foresights",
+  description: "Learn about Healthcare Foresights - your trusted partner for comprehensive healthcare market intelligence and research reports.",
 };
 
 export default function AboutPage() {
@@ -32,7 +32,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-[var(--foreground)] mb-4">Our Mission</h2>
               <p className="leading-relaxed">
-                Healthcare Research is dedicated to delivering comprehensive, data-driven market intelligence that empowers healthcare organizations, investors, and industry leaders to make confident strategic decisions. We bridge the gap between complex market dynamics and actionable insights.
+                Healthcare Foresights is dedicated to delivering comprehensive, data-driven market intelligence that empowers healthcare organizations, investors, and industry leaders to make confident strategic decisions. We bridge the gap between complex market dynamics and actionable insights.
               </p>
             </div>
 

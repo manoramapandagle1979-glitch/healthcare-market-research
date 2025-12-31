@@ -85,23 +85,24 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
         <h3 className="text-sm font-semibold text-[var(--foreground)] mb-4 uppercase tracking-wide">
           Report Details
         </h3>
-        <ul className="space-y-2">
+        <ul className="space-y-3">
           {items.map((item) => (
             <li
               key={item.id}
               className={cn(
-                'text-sm transition-all duration-200',
-                item.level === 2 && 'pl-4'
+                'transition-all duration-200'
               )}
             >
               <a
                 href={`#${item.id}`}
                 onClick={(e) => handleClick(e, item.id)}
                 className={cn(
-                  'block py-1 border-l-2 pl-4 transition-colors duration-200',
+                  'block py-3 px-4 border-l-4 transition-all duration-200 rounded-md',
+                  'bg-white hover:bg-gray-50',
+                  'shadow-sm hover:shadow-md',
                   activeId === item.id
-                    ? 'border-[var(--primary)] text-[var(--primary)] font-medium'
-                    : 'border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:border-[var(--muted-foreground)]'
+                    ? 'border-[#8b5cf6] text-[var(--foreground)] font-medium bg-[#faf5ff]'
+                    : 'border-[#e9d5ff] text-[var(--foreground)] hover:border-[#c084fc]'
                 )}
               >
                 {item.title}
