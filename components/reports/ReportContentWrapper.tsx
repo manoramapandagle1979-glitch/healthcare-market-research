@@ -77,7 +77,7 @@ export const ReportContentWrapper: React.FC<ReportContentWrapperProps> = ({
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
       {/* Left Sidebar - TOC Navigation */}
       {hasFullContent && tableOfContents && (
-        <aside className="hidden lg:block lg:col-span-3">
+        <aside className="hidden lg:block lg:col-span-3 2xl:col-span-2">
           <TableOfContents
             items={tableOfContents}
             onShowFullTOC={() => setShowFullTOC(true)}
@@ -88,7 +88,7 @@ export const ReportContentWrapper: React.FC<ReportContentWrapperProps> = ({
       )}
 
       {/* Main Content Area */}
-      <main className={hasFullContent ? 'lg:col-span-6' : 'lg:col-span-9'}>
+      <main className={hasFullContent ? 'lg:col-span-6 2xl:col-span-8' : 'lg:col-span-9  2xl:col-span-8'}>
         {showFullTOC ? (
           <FullReportTOC
             chapters={chapters}
@@ -100,7 +100,7 @@ export const ReportContentWrapper: React.FC<ReportContentWrapperProps> = ({
       </main>
 
       {/* Right Sidebar - CTA Panel */}
-      <aside className={hasFullContent ? 'lg:col-span-3' : 'lg:col-span-2'}>
+      <aside className={hasFullContent ? 'lg:col-span-3 2xl:col-span-2' : 'lg:col-span-2 2xl:col-span-2'}>
         <div className="sticky top-24 space-y-4">
           <CustomizeReportCard reportTitle={reportTitle} />
           <CTAPanel price={price} reportTitle={reportTitle} />

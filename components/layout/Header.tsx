@@ -8,11 +8,11 @@ import { SearchBar } from "@/components/ui";
 
 export default function Header() {
   const pathname = usePathname();
-  const isHomeOrReportListPage = pathname === "/" || pathname === "/reports";
+  const isNotReportPage = !pathname.includes("/reports/");
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/60 shadow-sm">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6 gap-2 md:gap-4">
+      <div className={`${isNotReportPage ? 'container mx-auto' : ''} flex h-16 items-center justify-between px-4 md:px-6 gap-2 md:gap-4 w-full`}>
         <Link href="/" className="flex items-center group flex-shrink-0">
           <Image
             src="/assets/images/logo.png"
@@ -25,7 +25,7 @@ export default function Header() {
         </Link>
 
         {/* Search Bar - Only show on non-homepage */}
-        {!isHomeOrReportListPage && (
+        {(
           <div className="hidden lg:flex flex-1 max-w-md mx-4 min-w-0">
             <SearchBar
               variant="header"

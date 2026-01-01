@@ -229,12 +229,12 @@ export default async function ReportPage({
   return (
     <div className="bg-[var(--background)]">
       <div className="border-b border-[var(--border)] bg-[var(--card)]">
-        <div className="container mx-auto px-4 py-4 md:px-6">
+        <div className="px-4 py-4 md:px-6">
           <Breadcrumb items={breadcrumbItems} />
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 md:px-6">
+      <div className="px-4 py-8 md:px-6">
         <ReportContentWrapper
           tableOfContents={report.tableOfContents}
           fullReportTOC={report.fullReportTOC}
@@ -346,7 +346,7 @@ export default async function ReportPage({
                             alt="Global Medical Device Market - Bar Chart showing market size by segment from 2020-2024"
                             width={1200}
                             height={600}
-                            className="w-full h-auto"
+                            className="w-full h-auto max-w-4xl mx-auto"
                             priority
                           />
                           
@@ -379,26 +379,8 @@ export default async function ReportPage({
                             alt="Global Medical Device Market - Pie Chart showing market distribution by segment 2020-2024"
                             width={1200}
                             height={600}
-                            className="w-full h-auto"
+                            className="w-full h-auto max-w-4xl mx-auto"
                           />
-                        {/* Download Sample Report CTA */}
-                        <div className="rounded-2xl pt-6">
-                          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
-                            <p className="text-[var(--muted-foreground)] text-base sm:text-lg font-medium">
-                              To learn more about this report,
-                            </p>
-                            <Link href={`/request-sample?report=${report.slug}`}>
-                              <Button
-                                variant="primary"
-                                size="lg"
-                                className="gap-2 shadow-primary hover:shadow-primary-lg whitespace-nowrap"
-                              >
-                                <Download className="w-5 h-5" />
-                                Download Free Sample
-                              </Button>
-                            </Link>
-                          </div>
-                        </div>
                       </div>
                         </div>
 
