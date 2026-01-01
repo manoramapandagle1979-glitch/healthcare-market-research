@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Section, Container, Card, CardHeader, CardTitle, CardDescription, CardContent, Button, Badge } from "@/components/ui";
+import { CONTACT_INFO } from "@/lib/contact";
+import { QuickContactSection, TrustedPartnersSidebar } from "@/components/contact";
 
 export default function RequestDemoPage() {
   const [formData, setFormData] = useState({
@@ -29,13 +31,13 @@ export default function RequestDemoPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1500));
-    
+
     setIsSubmitting(false);
     setSubmitted(true);
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setFormData({
@@ -70,54 +72,12 @@ export default function RequestDemoPage() {
         </Container>
       </Section>
 
-      <Section padding="xl">
+      <Section >
         <Container size="lg">
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="text-center">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Personalized Demo</h3>
-                <p className="text-sm text-[var(--muted-foreground)]">
-                  30-45 minute session tailored to your specific needs
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Expert Guidance</h3>
-                <p className="text-sm text-[var(--muted-foreground)]">
-                  Learn from our research analysts and product experts
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                  </svg>
-                </div>
-                <h3 className="font-semibold text-lg mb-2">No Commitment</h3>
-                <p className="text-sm text-[var(--muted-foreground)]">
-                  Explore our platform with no obligation to purchase
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            <Card>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Left Column - Form (2/3 width) */}
+            <div className="lg:col-span-2">
+              <Card>
               <CardHeader>
                 <CardTitle>Schedule Your Demo</CardTitle>
                 <CardDescription>
@@ -353,15 +313,74 @@ export default function RequestDemoPage() {
               </CardContent>
             </Card>
 
-            <div className="mt-8 text-center">
+              <div className="mt-8 text-center">
               <p className="text-sm text-[var(--muted-foreground)]">
                 Need immediate assistance?{" "}
                 <a href="/contact" className="text-[var(--primary)] hover:underline font-medium">
                   Contact us directly
                 </a>
-                {" "}or call +1 (555) 123-4567
+                {" "}or call{" "}
+                <a href={`tel:${CONTACT_INFO.offices.usa.phone}`} className="text-[var(--primary)] hover:underline font-medium">
+                  {CONTACT_INFO.offices.usa.phoneFormatted}
+                </a>
+                {" "}(USA) /{" "}
+                <a href={`tel:${CONTACT_INFO.offices.india.phone}`} className="text-[var(--primary)] hover:underline font-medium">
+                  {CONTACT_INFO.offices.india.phoneFormatted}
+                </a>
+                {" "}(India) - 24×7 Support
               </p>
             </div>
+          </div>
+
+          {/* Right Column - Quick Contact & Trusted Partners (1/3 width) */}
+          <div className="space-y-6">
+            <QuickContactSection />
+            <TrustedPartnersSidebar />
+          </div>
+        </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <Card className="text-center">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Personalized Demo</h3>
+                <p className="text-sm text-[var(--muted-foreground)]">
+                  30-45 minute session tailored to your specific needs
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Expert Guidance</h3>
+                <p className="text-sm text-[var(--muted-foreground)]">
+                  Learn from our research analysts and product experts
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-lg mb-2">No Commitment</h3>
+                <p className="text-sm text-[var(--muted-foreground)]">
+                  Explore our platform with no obligation to purchase
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </Container>
       </Section>

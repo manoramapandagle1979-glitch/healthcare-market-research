@@ -5,6 +5,7 @@ import {
   FeaturedReportsSection,
   IndustryCategoriesSection,
   StatsSection,
+  TrustedPartnersSection,
   TestimonialsSection,
   CTASection,
   StatsSectionSkeleton,
@@ -26,6 +27,8 @@ export default function HomePage() {
       <Suspense fallback={<StatsSectionSkeleton />}>
         <StatsSection />
       </Suspense>
+
+      <TrustedPartnersSection />
 
       <Suspense fallback={<TestimonialsSectionSkeleton />}>
         <TestimonialsSection />

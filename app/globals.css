@@ -41,7 +41,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  
+
   /* Gradient Utilities */
   .gradient-primary {
     background: var(--gradient-primary);
@@ -52,7 +52,7 @@ body {
   .gradient-warm {
     background: var(--gradient-warm);
   }
-  
+
   /* Enhanced Shadows with Color Tints */
   .shadow-primary {
     box-shadow: 0 4px 14px 0 rgba(37, 99, 163, 0.2);
@@ -65,6 +65,20 @@ body {
   }
   .shadow-soft {
     box-shadow: 0 2px 8px 0 rgba(15, 23, 42, 0.08);
+  }
+
+  /* Auto-scroll animation for partners */
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll-horizontal {
+    animation: scroll-horizontal 18s linear infinite;
   }
 }
 

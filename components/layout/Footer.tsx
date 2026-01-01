@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
+import { Mail, Phone, ChevronRight, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { CONTACT_INFO } from "@/lib/contact";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,15 +11,57 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-navy-800 via-ocean-600 to-ocean-500 text-white font-bold text-sm shadow-primary">
-                HF
-              </div>
-              <span className="font-bold text-lg bg-gradient-to-r from-navy-800 via-ocean-600 to-ocean-500 bg-clip-text text-transparent">Healthcare Foresights</span>
-            </div>
-            <p className="text-sm text-slate-600">
+            <Link href="/" className="inline-block">
+              <Image
+                src="/assets/images/logo.png"
+                alt="Healthcare Foresights - Predict. Research. Intelligence"
+                width={180}
+                height={50}
+                className="h-16 w-auto hover:opacity-80 transition-opacity"
+              />
+            </Link>
+            <p className="text-sm text-slate-600 mb-4">
               Comprehensive insights and analysis for the healthcare industry.
             </p>
+
+            <div className="flex gap-4">
+              <Link
+                href="https://facebook.com/healthcareforesights"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-ocean-600 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://instagram.com/healthcareforesights"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-ocean-600 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://linkedin.com/company/healthcareforesights"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-ocean-600 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://twitter.com/healthcareforesights"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-ocean-600 transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <Twitter className="w-5 h-5" />
+              </Link>
+            </div>
           </div>
 
           <div>
@@ -25,17 +70,19 @@ export default function Footer() {
               <li>
                 <Link
                   href="/reports"
-                  className="text-slate-600 hover:text-ocean-600 transition-colors flex items-center gap-2"
+                  className="text-slate-600 hover:text-ocean-600 transition-colors flex items-center gap-2 group"
                 >
-                  <span className="text-ocean-600">→</span> Research Reports
+                  <ChevronRight className="w-4 h-4 text-ocean-600 group-hover:translate-x-1 transition-transform" />
+                  Research Reports
                 </Link>
               </li>
               <li>
                 <Link
                   href="/blog"
-                  className="text-slate-600 hover:text-ocean-600 transition-colors flex items-center gap-2"
+                  className="text-slate-600 hover:text-ocean-600 transition-colors flex items-center gap-2 group"
                 >
-                  <span className="text-ocean-600">→</span> Blog
+                  <ChevronRight className="w-4 h-4 text-ocean-600 group-hover:translate-x-1 transition-transform" />
+                  Blog
                 </Link>
               </li>
             </ul>
@@ -43,9 +90,20 @@ export default function Footer() {
 
           <div>
             <h3 className="mb-4 text-lg font-semibold text-slate-900">Contact</h3>
-            <p className="text-sm text-slate-600 flex items-center gap-2">
-              <span className="text-ocean-600">✉️</span> info@healthcareresearch.com
-            </p>
+            <div className="space-y-2 text-sm text-slate-600">
+              <p className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-ocean-600" />
+                {CONTACT_INFO.email}
+              </p>
+              <p className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-ocean-600" />
+                USA: {CONTACT_INFO.offices.usa.phoneFormatted}
+              </p>
+              <p className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-ocean-600" />
+                India: {CONTACT_INFO.offices.india.phoneFormatted}
+              </p>
+            </div>
           </div>
         </div>
 

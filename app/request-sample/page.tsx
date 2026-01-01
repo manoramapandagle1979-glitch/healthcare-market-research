@@ -3,6 +3,8 @@
 import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Section, Container, Card, CardHeader, CardTitle, CardDescription, CardContent, Button, Badge } from "@/components/ui";
+import { CONTACT_INFO } from "@/lib/contact";
+import { QuickContactSection, TrustedPartnersSidebar } from "@/components/contact";
 
 function RequestSampleForm() {
   const searchParams = useSearchParams();
@@ -68,54 +70,12 @@ function RequestSampleForm() {
         </Container>
       </Section>
 
-      <Section padding="xl">
+      <Section>
         <Container size="lg">
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="text-center">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Comprehensive Sample</h3>
-                <p className="text-sm text-[var(--muted-foreground)]">
-                  Get 10-15 pages showcasing our methodology and insights
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Fast Delivery</h3>
-                <p className="text-sm text-[var(--muted-foreground)]">
-                  Receive your sample report within 24 hours
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <h3 className="font-semibold text-lg mb-2">No Obligation</h3>
-                <p className="text-sm text-[var(--muted-foreground)]">
-                  Completely free with no purchase required
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            <Card>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Left Column - Form (2/3 width) */}
+            <div className="lg:col-span-2">
+              <Card>
               <CardHeader>
                 <CardTitle>Request Your Free Sample</CardTitle>
                 <CardDescription>
@@ -277,14 +237,74 @@ function RequestSampleForm() {
               </CardContent>
             </Card>
 
-            <div className="mt-8 text-center">
+              <div className="mt-8 text-center">
               <p className="text-sm text-[var(--muted-foreground)]">
                 Questions about our sample reports?{" "}
                 <a href="/contact" className="text-[var(--primary)] hover:underline font-medium">
                   Contact us
                 </a>
+                {" "}or call{" "}
+                <a href={`tel:${CONTACT_INFO.offices.usa.phone}`} className="text-[var(--primary)] hover:underline font-medium">
+                  {CONTACT_INFO.offices.usa.phoneFormatted}
+                </a>
+                {" "}(USA) /{" "}
+                <a href={`tel:${CONTACT_INFO.offices.india.phone}`} className="text-[var(--primary)] hover:underline font-medium">
+                  {CONTACT_INFO.offices.india.phoneFormatted}
+                </a>
+                {" "}(India) - 24×7 Support
               </p>
             </div>
+          </div>
+
+          {/* Right Column - Quick Contact & Trusted Partners (1/3 width) */}
+          <div className="space-y-6">
+            <QuickContactSection />
+            <TrustedPartnersSidebar />
+          </div>
+        </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <Card className="text-center">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Comprehensive Sample</h3>
+                <p className="text-sm text-[var(--muted-foreground)]">
+                  Get 10-15 pages showcasing our methodology and insights
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Fast Delivery</h3>
+                <p className="text-sm text-[var(--muted-foreground)]">
+                  Receive your sample report within 24 hours
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-lg mb-2">No Obligation</h3>
+                <p className="text-sm text-[var(--muted-foreground)]">
+                  Completely free with no purchase required
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </Container>
       </Section>

@@ -76,7 +76,7 @@ export default function HeroSection() {
               <SearchBar
                 variant="hero"
                 placeholder="Search reports, categories, regions..."
-                className="w-full shadow-2xl hover:shadow-ocean-200/50 transition-shadow duration-300"
+                className="w-full shadow-2xl hover:shadow-ocean-200/50 transition-shadow duration-300 rounded-xl"
               />
             </div>
           </div>

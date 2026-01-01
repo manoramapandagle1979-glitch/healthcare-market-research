@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import categories from "@/data/categories.json";
 import MegaMenu from "./MegaMenu";
 import { cn } from "@/lib/utils";
@@ -170,6 +171,51 @@ export default function Navigation() {
             >
               Request Sample
             </Link>
+          </div>
+
+          {/* Social Media Links */}
+          <div className="mt-6 pt-6 px-4 border-t border-slate-200">
+            <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+              Follow Us
+            </span>
+            <div className="mt-3 flex gap-4">
+              <Link
+                href="https://facebook.com/healthcareforesights"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-ocean-600 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://instagram.com/healthcareforesights"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-ocean-600 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://linkedin.com/company/healthcareforesights"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-ocean-600 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://twitter.com/healthcareforesights"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-ocean-600 transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <Twitter className="w-5 h-5" />
+              </Link>
+            </div>
           </div>
         </nav>
       </div>
