@@ -37,8 +37,9 @@ export const metadata: Metadata = {
     description: "Access comprehensive healthcare research reports, industry analysis, and expert insights.",
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
+    nocache: true,
   },
 };
 
