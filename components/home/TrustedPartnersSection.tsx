@@ -45,7 +45,7 @@ export default function TrustedPartnersSection() {
               {duplicatedPartners.map((partner, index) => (
                 <div
                   key={`${partner.id}-${index}`}
-                  className="flex-shrink-0 w-[180px] h-[200px] flex items-center justify-center p-6 bg-white rounded-xl shadow-sm"
+                  className="flex-shrink-0 w-[180px] h-[200px] flex items-center justify-center p-6 bg-white rounded-xl"
                 >
                   <Image
                     src={partner.logo}
