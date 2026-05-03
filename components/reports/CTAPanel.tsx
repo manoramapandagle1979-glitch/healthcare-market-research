@@ -35,18 +35,18 @@ export const CTAPanel = React.forwardRef<HTMLDivElement, CTAPanelProps>(
           </div>
 
           <div className="space-y-3">
+            <Link href={reportId ? `/checkout/${reportId}` : reportSlug ? `/checkout/${reportSlug}` : '/contact'}>
+              <Button className="w-full" size="lg">
+                Buy Now
+              </Button>
+            </Link>
             <Link href={reportId ? `/request-sample?reportId=${reportId}` : `/request-sample${reportTitle ? `?report=${encodeURIComponent(reportTitle)}${reportSlug ? `&slug=${encodeURIComponent(reportSlug)}` : ''}` : ''}`}>
               <Button
                 variant="outline"
-                className="w-full bg-[#E3F2FD] text-[#1565C0] hover:bg-[#BBDEFB] hover:text-[#0D47A1] border-[#90CAF9] hover:border-[#64B5F6] focus:ring-[#2196F3]"
+                className="w-full mt-4 bg-[#E3F2FD] text-[#1565C0] hover:bg-[#BBDEFB] hover:text-[#0D47A1] border-[#90CAF9] hover:border-[#64B5F6] focus:ring-[#2196F3]"
                 size="lg"
               >
                 Request Sample
-              </Button>
-            </Link>
-            <Link href={reportId ? `/checkout/${reportId}` : reportSlug ? `/checkout/${reportSlug}` : '/contact'}>
-              <Button className="w-full mt-4" size="lg">
-                Buy Now
               </Button>
             </Link>
           </div>
