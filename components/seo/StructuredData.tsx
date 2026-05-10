@@ -267,7 +267,7 @@ export const generateDatasetSchema = (params: {
     name: 'Healthcare Foresights',
   },
   datePublished: params.datePublished,
-  license: 'https://www.healthcareforesights.com/legal/terms-of-use',
+  license: 'https://www.healthcareforesights.com/legal/privacy-policy',
   ...(params.keywords && params.keywords.length > 0 && {
     keywords: params.keywords.join(', '),
   }),
