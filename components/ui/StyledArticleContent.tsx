@@ -40,8 +40,24 @@ export const StyledArticleContent: React.FC<StyledArticleContentProps> = ({
         .styled-article-content h3 {
           color: #00695C;
           font-weight: 600;
-          margin-top: 1rem;
+          margin-top: 2rem;
           margin-bottom: 1rem;
+        }
+
+        /* Consecutive H3 (pullquote pattern) - style as blockquote */
+        .styled-article-content h3 + h3 {
+          font-size: 1.125rem;
+          font-style: italic;
+          font-weight: 500;
+          color: #37448C;
+          color: var(--teal-deep, #37448C);
+          background: #E0F5F3;
+          background: var(--teal-subtle, #E0F5F3);
+          border-left: 4px solid #00695C;
+          padding: 1rem 1.25rem;
+          border-radius: 0 0.5rem 0.5rem 0;
+          margin-top: 0.75rem;
+          margin-bottom: 1.5rem;
         }
 
         /* H5/H6 - Smallest headings with deep blue */
@@ -158,10 +174,10 @@ export const StyledArticleContent: React.FC<StyledArticleContentProps> = ({
           border-radius: 0 0.5rem 0.5rem 0;
         }
 
-        /* Section spacing */
-        .styled-article-content > h2 + *,
-        .styled-article-content > h3 + * {
-          margin-top: 1rem;
+        /* First element after a section heading gets no extra top margin (heading already has mb) */
+        .styled-article-content h2 + p,
+        .styled-article-content h3 + p {
+          margin-top: 0;
         }
       `}</style>
     </>
