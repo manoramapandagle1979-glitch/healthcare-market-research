@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { preload } from "react-dom";
 // import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -14,11 +15,18 @@ import type { SidebarTOCItem } from "@/lib/toc-utils";
 import { StructuredData, generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema, generateProductSchema, generateDatasetSchema } from "@/components/seo/StructuredData";
 import categories from "@/data/categories.json";
 
+function extractFirstCdnImageUrl(html: string): string | null {
+  const match = html.match(/src="(https:\/\/cdn\.healthcareforesights\.com\/[^"]+)"/i);
+  return match ? match[1] : null;
+}
+
 /**
  * Processes raw HTML content server-side to add performance attributes to CDN images.
- * Images load directly from the CDN to avoid server-side fetch issues in production.
+ * The first CDN image gets eager loading + high fetch priority (LCP candidate).
+ * Subsequent images get lazy loading to defer off-screen resources.
  */
 function processHtmlImages(html: string): string {
+  let isFirstImage = true;
   return html.replace(
     /<img([^>]*?)>/gi,
     (match, attrs: string) => {
@@ -26,8 +34,15 @@ function processHtmlImages(html: string): string {
       if (!hasCdnSrc) return match;
 
       let newAttrs = attrs;
-      if (!newAttrs.includes('loading=')) newAttrs += ` loading="lazy"`;
-      if (!newAttrs.includes('decoding=')) newAttrs += ` decoding="async"`;
+
+      if (isFirstImage) {
+        isFirstImage = false;
+        if (!newAttrs.includes('loading=')) newAttrs += ` loading="eager"`;
+        if (!newAttrs.includes('fetchpriority=')) newAttrs += ` fetchpriority="high"`;
+      } else {
+        if (!newAttrs.includes('loading=')) newAttrs += ` loading="lazy"`;
+        if (!newAttrs.includes('decoding=')) newAttrs += ` decoding="async"`;
+      }
 
       return `<img${newAttrs}>`;
     }
@@ -202,6 +217,11 @@ export default async function ReportPage({
   if (hasFullContent && report.marketDetails) {
     const { toc, htmlWithIds } = parseHTMLAndGenerateTOC(report.marketDetails);
     marketDetailsWithIds = processHtmlImages(htmlWithIds);
+
+    const firstImageUrl = extractFirstCdnImageUrl(marketDetailsWithIds);
+    if (firstImageUrl) {
+      preload(firstImageUrl, { as: 'image', fetchPriority: 'high' });
+    }
 
     // Add static sections from the page to TOC
     const staticSections: SidebarTOCItem[] = [];

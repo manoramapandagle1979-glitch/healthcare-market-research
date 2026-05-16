@@ -256,6 +256,19 @@ export const StyledReportContent: React.FC<StyledReportContentProps> = ({
           margin-top: 1rem;
         }
 
+        /* Reserve space before CDN images load to prevent layout shifts (CLS) */
+        .styled-report-content img.tiptap-image {
+          width: 100%;
+          height: auto;
+          max-width: 48rem;
+          margin: 0 auto;
+          display: block;
+          aspect-ratio: 16 / 9;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          border: 1px solid var(--border);
+          border-radius: 0.5rem;
+        }
+
         .image-wrapper {
           margin: 1rem 0;
           width: 100%;

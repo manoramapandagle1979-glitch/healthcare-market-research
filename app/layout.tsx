@@ -61,6 +61,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Preconnect to third-party origins to reduce connection latency */}
+        <link rel="preconnect" href="https://cdn.healthcareforesights.com" />
         <link rel="preconnect" href="https://translate.google.com" />
         <link rel="dns-prefetch" href="https://translate.google.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -76,10 +77,8 @@ export default function RootLayout({
         <Footer />
         <GoogleAnalytics gaId="G-NJ1DNL58KB" />
         <Script
-          type="text/javascript"
           id="hs-script-loader"
-          async
-          defer
+          strategy="lazyOnload"
           src="//js.hs-scripts.com/22449271.js"
         />
       </body>
