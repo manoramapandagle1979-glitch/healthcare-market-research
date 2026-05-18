@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import { preload } from "react-dom";
 // import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -39,9 +38,13 @@ function processHtmlImages(html: string): string {
         isFirstImage = false;
         if (!newAttrs.includes('loading=')) newAttrs += ` loading="eager"`;
         if (!newAttrs.includes('fetchpriority=')) newAttrs += ` fetchpriority="high"`;
+        if (!newAttrs.includes('width=')) newAttrs += ` width="768"`;
+        if (!newAttrs.includes('height=')) newAttrs += ` height="432"`;
       } else {
         if (!newAttrs.includes('loading=')) newAttrs += ` loading="lazy"`;
         if (!newAttrs.includes('decoding=')) newAttrs += ` decoding="async"`;
+        if (!newAttrs.includes('width=')) newAttrs += ` width="768"`;
+        if (!newAttrs.includes('height=')) newAttrs += ` height="432"`;
       }
 
       return `<img${newAttrs}>`;
@@ -213,15 +216,13 @@ export default async function ReportPage({
   // Parse marketDetails HTML and generate TOC with IDs
   let sidebarTOC: SidebarTOCItem[] = [];
   let marketDetailsWithIds = report.marketDetails || '';
+  let lcpImageUrl: string | null = null;
 
   if (hasFullContent && report.marketDetails) {
     const { toc, htmlWithIds } = parseHTMLAndGenerateTOC(report.marketDetails);
     marketDetailsWithIds = processHtmlImages(htmlWithIds);
 
-    const firstImageUrl = extractFirstCdnImageUrl(marketDetailsWithIds);
-    if (firstImageUrl) {
-      preload(firstImageUrl, { as: 'image', fetchPriority: 'high' });
-    }
+    lcpImageUrl = extractFirstCdnImageUrl(marketDetailsWithIds);
 
     // Add static sections from the page to TOC
     const staticSections: SidebarTOCItem[] = [];
@@ -443,6 +444,16 @@ export default async function ReportPage({
 
   return (
     <>
+      {/* Preload the LCP image directly in JSX so Next.js hoists it into the initial <head> shell,
+          ensuring the browser discovers it at TTFB rather than after the streaming content arrives */}
+      {lcpImageUrl && (
+        <link
+          rel="preload"
+          as="image"
+          href={lcpImageUrl}
+          fetchPriority="high"
+        />
+      )}
       <StructuredData data={articleSchema} />
       <StructuredData data={productSchema} />
       <StructuredData data={datasetSchema} />

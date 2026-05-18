@@ -62,8 +62,6 @@ export default function RootLayout({
       <head>
         {/* Preconnect to third-party origins to reduce connection latency */}
         <link rel="preconnect" href="https://cdn.healthcareforesights.com" />
-        <link rel="preconnect" href="https://translate.google.com" />
-        <link rel="dns-prefetch" href="https://translate.google.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <StructuredData data={generateOrganizationSchema()} />
