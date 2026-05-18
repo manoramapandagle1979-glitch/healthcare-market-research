@@ -3,9 +3,9 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { HubSpotLoader } from "@/components/layout/HubSpotLoader";
 import { StructuredData, generateOrganizationSchema, generateWebSiteSchema, generateLocalBusinessSchema } from "@/components/seo/StructuredData";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -74,11 +74,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <Footer />
         <GoogleAnalytics gaId="G-NJ1DNL58KB" />
-        <Script
-          id="hs-script-loader"
-          strategy="lazyOnload"
-          src="//js.hs-scripts.com/22449271.js"
-        />
+        <HubSpotLoader />
       </body>
     </html>
   );

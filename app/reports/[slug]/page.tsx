@@ -52,8 +52,9 @@ function processHtmlImages(html: string): string {
   );
 }
 
-// Enable ISR with 10-minute revalidation
-export const revalidate = 600;
+// ISR: revalidate every hour. Report content changes infrequently;
+// cache tags on the fetch allow on-demand invalidation from the admin.
+export const revalidate = 3600;
 
 export async function generateStaticParams() {
   const response = await getReports({ status: 'published', limit: 1000 });

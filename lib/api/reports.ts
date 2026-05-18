@@ -102,7 +102,9 @@ export async function getReports(
  * }
  */
 export async function getReportBySlug(slug: string): Promise<ApiResponse<Report>> {
-  const response = await apiFetch<ReportDetailData>(`/api/v1/reports/${slug}`);
+  const response = await apiFetch<ReportDetailData>(`/api/v1/reports/${slug}`, {
+    next: { revalidate: 3600, tags: [`report:${slug}`] },
+  });
 
   // If error, return as-is
   if (!response.success) {
