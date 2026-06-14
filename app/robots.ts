@@ -9,6 +9,14 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/legal/', '/request-customization', '/request-sample', '/request-analyst-meeting', '/checkout/'],
       },
     ],
-    sitemap: 'https://www.healthcareforesights.com/sitemap.xml',
+    sitemap: [
+      'https://www.healthcareforesights.com/sitemap.xml',
+      'https://www.healthcareforesights.com/sitemap-pages.xml',
+      'https://www.healthcareforesights.com/sitemap-consulting.xml',
+      'https://www.healthcareforesights.com/news-sitemap.xml',
+      'https://www.healthcareforesights.com/sitemap-reports-1.xml',
+      'https://www.healthcareforesights.com/sitemap-blogs-1.xml',
+      'https://www.healthcareforesights.com/sitemap-press-releases-1.xml',
+    ],
   };
 }
