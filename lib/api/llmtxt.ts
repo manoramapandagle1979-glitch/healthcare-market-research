@@ -57,21 +57,20 @@ export function generateLLMTxt(): string {
 
   // Site Overview
   content += '# Healthcare Market Research\n\n';
+  content += '> A comprehensive healthcare market research and consulting firm delivering business insights, market research reports, and strategic advisory services to organizations across the healthcare and life sciences ecosystem. We provide data-driven intelligence covering pharmaceuticals, biotechnology, medical devices, diagnostics, healthcare IT, and therapeutic areas.\n\n';
   content += '## Site Overview\n\n';
-  content += 'A comprehensive healthcare market research and consulting firm delivering business insights, market research reports, and strategic advisory services to organizations across the healthcare and life sciences ecosystem. We provide data-driven intelligence covering pharmaceuticals, biotechnology, medical devices, diagnostics, healthcare IT, and therapeutic areas.\n\n';
-  content += `Total Research Reports: ${reports.length}\n`;
-  content += `Blog Articles: ${blogs.length}\n`;
-  content += `Consulting Services: ${services.length}\n`;
-  content += `Content Categories: ${categories.length}\n\n`;
+  content += `- Total Research Reports: ${reports.length}\n`;
+  content += `- Blog Articles: ${blogs.length}\n`;
+  content += `- Consulting Services: ${services.length}\n`;
+  content += `- Content Categories: ${categories.length}\n\n`;
 
   // Content Categories
   content += '## Content Categories\n\n';
   categories.forEach(cat => {
     const reportCount = reports.filter(r => r.category === cat.name).length;
-    content += `### ${cat.name}\n`;
-    content += `${cat.description}\n`;
-    content += `Reports: ${reportCount} | URL: ${baseUrl}/categories/${cat.slug}\n\n`;
+    content += `- [${cat.name}](${baseUrl}/categories/${cat.slug}): ${cat.description} (${reportCount} reports)\n`;
   });
+  content += '\n';
 
   // Research Reports Summary
   content += '## Research Reports\n\n';
@@ -96,28 +95,25 @@ export function generateLLMTxt(): string {
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   featuredReports.forEach(report => {
-    content += `#### ${report.title}\n`;
-    content += `${report.description}\n`;
-    content += `Category: ${report.category} | Region: ${report.region}\n`;
+    content += `- [${report.title}](${baseUrl}/reports/${report.slug}): ${report.description}`;
     if (report.cagr && report.forecastPeriod) {
-      content += `Market Growth: ${report.cagr} CAGR | Forecast: ${report.forecastPeriod}\n`;
+      content += ` | ${report.cagr} CAGR, ${report.forecastPeriod}`;
     }
     if (report.marketSize2024 && report.marketSize2032) {
-      content += `Market Size: ${report.marketSize2024} (2024) → ${report.marketSize2032} (2032)\n`;
+      content += ` | Market: ${report.marketSize2024} (2024) → ${report.marketSize2032} (2032)`;
     }
-    content += `URL: ${baseUrl}/reports/${report.slug}\n\n`;
+    content += `\n`;
   });
+  content += '\n';
 
   // Blog Posts
   content += '## Blog & Insights\n\n';
   content += 'Expert analysis, industry insights, and thought leadership covering emerging trends in healthcare and life sciences.\n\n';
 
   blogs.forEach(blog => {
-    content += `### ${blog.title}\n`;
-    content += `${blog.excerpt}\n`;
-    content += `Author: ${blog.author} | Category: ${blog.category} | Published: ${blog.date} | ${blog.readTime}\n`;
-    content += `URL: ${baseUrl}/blog/${blog.slug}\n\n`;
+    content += `- [${blog.title}](${baseUrl}/blog/${blog.slug}): ${blog.excerpt} (${blog.author}, ${blog.date})\n`;
   });
+  content += '\n';
 
   // Consulting Services
   content += '## Consulting Services\n\n';
@@ -131,30 +127,23 @@ export function generateLLMTxt(): string {
     const categoryServices = services.filter(s => s.category === category);
 
     categoryServices.forEach(service => {
-      content += `#### ${service.title}\n`;
-      content += `${service.description}\n\n`;
-      content += `${service.overview}\n\n`;
-      content += 'Key Services:\n';
-      service.servicesInclude.slice(0, 5).forEach(item => {
-        content += `- ${item}\n`;
-      });
-      content += `\nURL: ${baseUrl}/consulting/${service.slug}\n\n`;
+      content += `- [${service.title}](${baseUrl}/consulting/${service.slug}): ${service.description}\n`;
     });
   });
 
   // Site Structure
   content += '## Site Structure\n\n';
   content += '### Main Pages\n\n';
-  content += `- Home: ${baseUrl}/\n`;
-  content += `- Research Reports: ${baseUrl}/reports\n`;
-  content += `- Blog & Insights: ${baseUrl}/blog\n`;
-  content += `- Consulting Services: ${baseUrl}/consulting\n`;
-  content += `- About Us: ${baseUrl}/about\n`;
-  content += `- Contact: ${baseUrl}/contact\n\n`;
+  content += `- [Home](${baseUrl}/)\n`;
+  content += `- [Research Reports](${baseUrl}/reports)\n`;
+  content += `- [Blog & Insights](${baseUrl}/blog)\n`;
+  content += `- [Consulting Services](${baseUrl}/consulting)\n`;
+  content += `- [About Us](${baseUrl}/about)\n`;
+  content += `- [Contact](${baseUrl}/contact)\n\n`;
 
   content += '### Report Categories\n\n';
   categories.forEach(cat => {
-    content += `- ${cat.name}: ${baseUrl}/categories/${cat.slug}\n`;
+    content += `- [${cat.name}](${baseUrl}/categories/${cat.slug})\n`;
   });
   content += '\n';
 
