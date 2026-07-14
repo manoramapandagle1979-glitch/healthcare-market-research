@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { HubSpotLoader } from "@/components/layout/HubSpotLoader";
+import { TawkLoader } from "@/components/layout/TawkLoader";
 import { StructuredData, generateOrganizationSchema, generateWebSiteSchema, generateLocalBusinessSchema } from "@/components/seo/StructuredData";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -75,6 +76,7 @@ export default function RootLayout({
         <Footer />
         <GoogleAnalytics gaId="G-NJ1DNL58KB" />
         <HubSpotLoader />
+        <TawkLoader />
       </body>
     </html>
   );
