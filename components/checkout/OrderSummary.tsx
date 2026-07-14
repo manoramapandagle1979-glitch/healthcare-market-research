@@ -1,6 +1,7 @@
 'use client';
 
 import { Card, CardContent } from '@/components/ui';
+import { WHATS_INCLUDED } from '@/lib/constants';
 
 interface OrderSummaryProps {
   reportTitle: string;
@@ -27,7 +28,7 @@ export function OrderSummary({
         <div className="border-b border-[var(--border)] pb-4">
           <p className="text-sm text-[var(--muted-foreground)] mb-1">Report</p>
           <p className="font-medium text-[var(--foreground)] leading-snug">{reportTitle}</p>
-          <p className="text-xs text-[var(--muted-foreground)] mt-1">Single User License · PDF &amp; Excel</p>
+          <p className="text-xs text-[var(--muted-foreground)] mt-1">Global User License · PDF &amp; Excel</p>
         </div>
 
         <div className="space-y-2">
@@ -53,9 +54,9 @@ export function OrderSummary({
         </div>
 
         <div className="pt-2 border-t border-[var(--border)] text-xs text-[var(--muted-foreground)] space-y-1">
-          <p>✓ Report delivered via email within 2–3 business days</p>
-          <p>✓ PDF &amp; Excel formats included</p>
-          <p>✓ Analyst support included</p>
+          {WHATS_INCLUDED.map((item) => (
+            <p key={item}>{item}</p>
+          ))}
         </div>
       </CardContent>
     </Card>
