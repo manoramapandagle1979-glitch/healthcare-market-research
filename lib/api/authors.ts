@@ -14,6 +14,43 @@ interface AuthorDetailData {
 }
 
 /**
+ * Fetch a paginated list of authors with optional search
+ *
+ * @param params - Optional page, limit, and search filters
+ * @returns Promise<ApiResponse<ApiAuthor[]>>
+ *
+ * @example
+ * const response = await getAuthors({ limit: 50 });
+ * if (!isApiError(response)) {
+ *   const authors = response.data;
+ * }
+ */
+export async function getAuthors(params?: {
+  page?: number;
+  limit?: number;
+  search?: string;
+}): Promise<ApiResponse<ApiAuthor[]>> {
+  const queryString = buildQueryString({
+    page: params?.page,
+    limit: params?.limit,
+    search: params?.search,
+  });
+
+  const response = await apiFetch<ApiAuthor[]>(`/api/v1/authors${queryString}`);
+
+  if (!response.success) {
+    return response;
+  }
+
+  const authors = Array.isArray(response.data) ? response.data : [];
+
+  return {
+    success: true,
+    data: authors,
+  };
+}
+
+/**
  * Author reports list response from API
  */
 interface AuthorReportsData {
